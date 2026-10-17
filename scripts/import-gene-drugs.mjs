@@ -1,0 +1,13 @@
+import {mkdir,writeFile,rename} from 'node:fs/promises';import {createHash} from 'node:crypto';import {KEY_GENES} from '../public/key-genes.js';import {validateGeneDrugs} from '../public/gene-drugs.js';
+const work=new URL('../work/cpic-source/',import.meta.url);await mkdir(work,{recursive:true});let rows=[],total;const requests=[];
+for(let offset=0;;offset+=500){
+ const url='https://api.cpicpgx.org/v1/pair_view?order=pairid&limit=500&offset='+offset,response=await fetch(url,{headers:{Accept:'application/json',Prefer:'count=exact'},signal:AbortSignal.timeout(45000)});
+ if(!response.ok)throw Error('CPIC HTTP '+response.status);const bytes=Buffer.from(await response.arrayBuffer()),n=Number(response.headers.get('content-range')?.split('/')[1]);if(!Number.isSafeInteger(n)||total!==undefined&&total!==n)throw Error('CPIC pagination changed');total=n;
+ requests.push({url,sha256:createHash('sha256').update(bytes).digest('hex'),contentRange:response.headers.get('content-range')});const page=JSON.parse(bytes);if(!Array.isArray(page))throw Error('CPIC data is not an array');rows.push(...page);if(rows.length===total)break;if(!page.length||rows.length>total)throw Error('Incomplete CPIC pagination');
+}
+if(new Set(rows.map(r=>r.pairid)).size!==rows.length)throw Error('Duplicate CPIC source pairs');
+const genes=new Set(KEY_GENES.flatMap(g=>g.genes)),selected=rows.filter(r=>genes.has(r.genesymbol)&&['A','B'].includes(r.cpiclevel)&&r.guidelineurl&&r.provisional===false);
+const records=selected.map(r=>({pairId:r.pairid,gene:r.genesymbol,drug:r.drugname,drugId:r.drugid,level:r.cpiclevel,guideline:r.guidelinename,url:r.guidelineurl,pmids:r.pmids||[],provisional:r.provisional,usedForRecommendation:r.usedforrecommendation})).sort((a,b)=>a.gene.localeCompare(b.gene)||a.drug.localeCompare(b.drug));
+const snapshot=Buffer.from(JSON.stringify(rows));await writeFile(new URL('gene-drug-pairs-source.json',work),snapshot);
+const library={schemaVersion:1,version:'1.0.0',retrievedAt:new Date().toISOString(),sourceURL:'https://api.cpicpgx.org/v1/pair_view',sourceSha256:createHash('sha256').update(snapshot).digest('hex'),sourceRecordCount:total,requests,selection:'Non-provisional CPIC level A or B gene–drug pairs with a linked guideline, restricted to installed Key genes profiles. No personal medication or genotype assessment.',records};
+validateGeneDrugs(library);if(!records.length)throw Error('No qualifying CPIC references');const out=new URL('../public/data/gene-drug-library.json',import.meta.url),tmp=new URL(out.href+'.tmp');await writeFile(tmp,JSON.stringify(library,null,2)+'\n');await rename(tmp,out);console.log(JSON.stringify({pairs:records.length,genes:new Set(records.map(r=>r.gene)).size,drugs:new Set(records.map(r=>r.drugId)).size}));

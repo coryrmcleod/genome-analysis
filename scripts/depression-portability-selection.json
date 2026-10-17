@@ -1,0 +1,3 @@
+[
+ {"id":"PGS001829","family":"Depression (UK Biobank)","count":7534,"reviewedAssemblyReversals":true,"coverageContext":"UK Biobank depression research model trained in European participants and evaluated across ancestry groups. Reported partial correlations are small and several intervals include zero; representation in evaluation does not establish predictive utility or individual applicability. GA does not reproduce covariate adjustment, diagnose depression, estimate absolute risk, or predict treatment response. Build-specific alleles, where needed, require unique reciprocal assembly-chain mappings and exact reverse-complement reference flanks; original weights and source alleles remain unchanged."}
+]

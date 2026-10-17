@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {createHash} from 'node:crypto';import {empiricalPercentile} from '../public/pgs-reference.js';import {validateSensitivityReference} from '../public/pgs-sensitivity.js';
+const bytes=fs.readFileSync('public/data/pgs-score-sensitivity.json'),reference=validateSensitivityReference(JSON.parse(bytes)),proof=JSON.parse(fs.readFileSync('test/fixtures/pgs/installed-sensitivity-percentile-independent-corners.json'));
+test('all installed sensitivity distributions retain independent lower, central and upper ranks',()=>{
+ assert.equal(createHash('sha256').update(bytes).digest('hex'),proof.referenceSha256);const available=reference.models.filter(m=>m.status==='Available');assert.equal(proof.models.length,624);assert.deepEqual(proof.models.map(m=>[m.id,m.field]),available.flatMap(m=>['lowerScores','centralScores','upperScores'].map(field=>[m.id,field])));
+ for(const model of proof.models){const row=available.find(m=>m.id===model.id);assert.equal(row.sampleCount,model.sampleCount);assert.equal(model.cases[0].expectedRank,0);assert.equal(model.cases.at(-1).expectedRank,100);for(const c of model.cases)assert.equal(empiricalPercentile(row[model.field],c.value),c.expectedRank,`${model.id} ${model.field} ${c.value}`);}
+});

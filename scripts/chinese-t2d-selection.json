@@ -1,0 +1,9 @@
+[
+  {
+    "id": "PGS004225",
+    "family": "Type 2 diabetes",
+    "count": 46,
+    "allowEffectOnly": true,
+    "coverageContext": "Complete 46-variant weighted research score from East Asian discovery studies, evaluated in 5,024 Chinese participants in the Wuxi cohort. Published high-versus-low genetic quintile hazard ratio is adjusted for age, sex, blood pressure, fasting glucose, lipids and family history; it is not a per-unit raw-score effect or personal probability. The separate joint lifestyle/genetic comparison includes lifestyle and cannot be attributed to genetics alone. Observational lifestyle associations do not establish personal intervention effects. Primary Table S1 matches all deposited alleles and weights. Deposited selection metadata says MAF >0.5, while the primary paper says >0.05; the deposited metadata is retained for traceability. Evaluation outside this cohort, absolute risk, diagnosis and treatment benefit are not established by this score."
+  }
+]

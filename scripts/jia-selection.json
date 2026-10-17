@@ -1,0 +1,3 @@
+[
+ {"id":"PGS000114","family":"Juvenile idiopathic arthritis","count":26,"allowEffectOnly":true,"reviewedJIAMethod":true,"coverageContext":"Complete26-term SparSNP lasso-linear JIA model trained in a European UK cohort and externally evaluated in CHOP and CLARITY childhood cohorts. Catalog units remain NR; exact primary-method evidence establishes an additive sum, not a log-odds scale. Genetic-only AUROC was0.657 and0.671; higher0.735/0.738values include sex and ancestry covariates not reproduced by GA. Not an adult rheumatoid-arthritis score, JIA subtype diagnosis, assessment of active inflammation, or treatment recommendation."}
+]

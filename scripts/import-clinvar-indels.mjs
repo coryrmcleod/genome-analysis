@@ -1,0 +1,28 @@
+import {readFile,writeFile,rename} from 'node:fs/promises';
+import {createReadStream} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {execFile} from 'node:child_process';
+import {promisify} from 'node:util';
+import {fileURLToPath} from 'node:url';
+import {validateShortVariantLibrary} from '../public/short-variants.js';
+const reference=process.argv[2];if(!reference)throw Error('Supply the verified GRCh38 FASTA path. Run in WSL with BCFtools installed.');
+const root=new URL('../',import.meta.url),cache=new URL('work/indel-source/',root),exec=promisify(execFile);
+const discovered=JSON.parse(await readFile(new URL('candidates.json',cache))),clinical=JSON.parse(await readFile(new URL('public/data/clinical-library.json',root)));
+if(discovered.releaseDate!==clinical.releaseDate)throw Error('ClinVar releases differ');
+const referenceEvidence=JSON.parse(await readFile(reference+'.verification.json'));
+if(!referenceEvidence.allRequiredSequencesMatch||!/^[a-f0-9]{64}$/.test(referenceEvidence.sha256))throw Error('Reference verification evidence unavailable');
+const referenceDigest=createHash('sha256');for await(const chunk of createReadStream(reference))referenceDigest.update(chunk);const referenceSha256=referenceDigest.digest('hex');
+if(referenceSha256!==referenceEvidence.sha256)throw Error('Reference FASTA changed since verification');
+const normalized=new URL('normalized.vcf',cache),source=new URL('source.vcf',cache);
+const args=['norm','-f',reference,'--check-ref','e','--old-rec-tag','GA_ORIGINAL','-Ov','-o',fileURLToPath(normalized),fileURLToPath(source)];
+const result=await exec('bcftools',args,{maxBuffer:1000000});console.log(result.stderr.trim());
+const byId=new Map(discovered.records.map(r=>[r.variationId,r])),records=[];
+for(const line of (await readFile(normalized,'utf8')).split(/\r?\n/)){if(!line||line.startsWith('#'))continue;const f=line.split('\t'),original=byId.get(f[2]);if(!original)throw Error('Unexpected normalized variant ID');byId.delete(f[2]);
+ const chrom=f[0].replace(/^chr/,''),position=Number(f[1]),ref=f[3],alt=f[4],kind=ref.length>alt.length?'deletion':'insertion',size=Math.abs(ref.length-alt.length);
+ const assertion={variationId:original.variationId,allele:alt,classification:original.classification,reviewStatus:original.reviewStatus,stars:original.reviewStatus==='practice_guideline'?4:3,conditions:original.conditions,conditionIdentifiers:original.conditionIdentifiers,releaseDate:discovered.releaseDate,url:`https://www.ncbi.nlm.nih.gov/clinvar/variation/${original.variationId}/`,scope:'Aggregate source classification; not a disease-specific or personal assertion.'};
+ records.push({id:'clinvar:'+original.variationId,rsID:original.rsID,variantKind:'short-indel',gene:original.genes.join(' / '),label:`ClinVar reviewed ${size}-bp ${kind}`,trait:'Inherited-condition review: '+original.genes.join(' / '),category:'ClinVar review',priority:2,evidence:'ClinVar expert-panel / guideline classification',effectAllele:alt,frequency:null,mappings:{GRCh38:{chrom,position,ref,alleles:[ref,alt]}},clinvar:[assertion],originalRepresentation:{chrom:original.chrom,position:original.position,ref:original.ref,alt:original.alt},reviewStatus:'Allele-specific ClinVar source; normalized GRCh38 representation',summary:'A quality-gated VCF allele representation can be linked to this dated ClinVar citation. This is not clinical confirmation.',caution:'Selected simple insertions and deletions up to 50 inserted/deleted bases only, on GRCh38 autosomes. Missing records are unresolved. Complex alleles, overlapping calls, structural variants, other genes, phase, penetrance and diagnosis are not assessed.',sources:[{label:'ClinVar variation '+original.variationId,url:assertion.url}]});
+}
+if(byId.size||records.length!==discovered.records.length)throw Error('Normalization changed record count');
+const hash=async url=>createHash('sha256').update(await readFile(url)).digest('hex');
+const library={version:'1.2.0',build:'GRCh38',retrievedAt:new Date().toISOString(),releaseDate:discovered.releaseDate,referenceSha256,referenceSourceURL:referenceEvidence.sourceURL,sourceURL:clinical.sourceURLs.find(s=>s.includes('GRCh38')),sourceSha256:clinical.sourceHashes.GRCh38,sourceSubsetSha256:await hash(source),normalizedSubsetSha256:await hash(normalized),normalization:{tool:(await exec('bcftools',['--version'])).stdout.split('\n')[0],checkRef:'error',splitMultiallelic:false,eventSizeLimit:50,paddedAlleleLengthLimit:51},records};
+validateShortVariantLibrary(library);const next=new URL('public/data/short-variant-library.next.json',root),dest=new URL('public/data/short-variant-library.json',root);await writeFile(next,JSON.stringify(library,null,2)+'\n');await rename(next,dest);console.log(JSON.stringify({installed:records.length,build:library.build,referenceSha256}));

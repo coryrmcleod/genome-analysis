@@ -1,0 +1,11 @@
+import {mkdir,cp,writeFile,readFile} from 'node:fs/promises';
+const source=JSON.parse(await readFile(new URL('../package.json',import.meta.url),'utf8'));
+const preview=await readFile(new URL('../public/index.html',import.meta.url),'utf8');
+if(preview.match(/class="version">v(\d+\.\d+\.\d+)/)?.[1]!==source.version)throw Error('Public preview badge differs from package version; update it before staging.');
+const destination=new URL('../work/desktop-app/',import.meta.url);
+await mkdir(destination,{recursive:true});
+for(const file of ['desktop','public','server.mjs'])await cp(new URL('../'+file,import.meta.url),new URL(file,destination),{recursive:true});
+await writeFile(new URL('package.json',destination),JSON.stringify({name:source.name,version:source.version,description:source.description,main:source.main,type:'module',private:true,license:source.license,author:source.author}));
+const pipeline=new URL('../work/desktop-pipeline/',import.meta.url);
+await mkdir(pipeline,{recursive:true});
+for(const file of ['scripts','public','package.json'])await cp(new URL('../'+file,import.meta.url),new URL(file,pipeline),{recursive:true});

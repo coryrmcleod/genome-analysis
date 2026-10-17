@@ -1,0 +1,4 @@
+[
+ {"id":"PGS001837","family":"Cataract","count":11617,"coverageContext":"UK Biobank research model evaluated for cataract in eight ancestry-group sample sets from the same cohort. Reported partial correlations are small and several intervals include zero; performance is not uniform across populations. GA computes the complete genetic sum only, without the study covariates. Not a current lens examination, visual-acuity estimate, surgery recommendation or calibrated personal risk."},
+ {"id":"PGS001855","family":"Ulcerative colitis","count":1505,"coverageContext":"UK Biobank research model for ulcerative colitis, kept separate from the broader inflammatory-bowel-disease score. Reported partial correlations are small and ancestry-dependent, with several intervals including zero. GA does not reproduce the covariate-adjusted study model. Not a Crohn disease score, inflammation measurement, diagnosis, flare prediction or medication guide."}
+]

@@ -1,0 +1,9 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {createHash} from 'node:crypto';
+import {calculatePGS,isPalindromic} from '../public/pgs.js';import {termForBuild} from '../public/pgs-build-alleles.js';
+const bytes=fs.readFileSync('public/data/pgs-library.json'),library=JSON.parse(bytes),proof=JSON.parse(fs.readFileSync('test/fixtures/pgs/installed-decimal-sum-corners.json'));assert.equal(createHash('sha256').update(bytes).digest('hex'),proof.librarySha256);
+for(const build of ['GRCh37','GRCh38'])test(`installed source decimals retain independently calculated rounding and cancellation corners on ${build}`,()=>{
+ const pairs=new Map();for(const m of library.models)for(const v of m.variants){const t=termForBuild(v,build);if(t.alleleMode!=='effect-only'&&t.kind!=='reviewed-deletion')pairs.set(t.id,[t.effectAllele,t.otherAllele]);}
+ const results=library.targets.filter(t=>t.variantKind!=='reviewed-pgs-deletion').map((t,i)=>{const a=t.mappings[build],pair=pairs.get(t.id)||a.alleles.slice(0,2),alleles=isPalindromic(...pair)?pair:i%3===0?[pair[0],pair[0]]:i%3===1?pair:[pair[1],pair[1]];return {id:t.id,status:'Called',alleles,genotype:alleles.join('/'),mappings:t.mappings};});
+ const scores=calculatePGS(library,{build,format:'VCF',results}),cases=proof.cases.filter(c=>c.build===build);assert.equal(cases.length,6);
+ for(const fixture of cases){const actual=scores.find(m=>m.id===fixture.id);assert.equal(actual.matched,fixture.matched);assert.equal(actual.total,fixture.total);const expected=Number(fixture.exactSubtotal),scale=Number(fixture.absoluteContributionSum);assert.ok(Math.abs(actual.matchedSubtotal-expected)<=Math.max(scale*1e-14,Number.MIN_VALUE),fixture.id);if(actual.matched<actual.total)assert.equal(actual.rawSum,null);else assert.equal(actual.rawSum,actual.matchedSubtotal);}
+});

@@ -1,0 +1,58 @@
+{
+  "appId": "org.coryrmcleod.genomeanalysis.opensource.preview",
+  "productName": "Genome Analysis Open Source Preview",
+  "asar": true,
+  "directories": {
+    "output": "dist-desktop",
+    "app": "work/desktop-app"
+  },
+  "files": [
+    "desktop/**/*",
+    "public/**/*",
+    "server.mjs",
+    "package.json"
+  ],
+  "extraResources": [
+    {
+      "from": "work/desktop-pipeline",
+      "to": "pipeline",
+      "filter": [
+        "scripts/**/*.mjs",
+        "scripts/**/*.py",
+        "scripts/install-cram-tools.sh",
+        "public/**/*.js",
+        "public/data/**/*.json",
+        "package.json"
+      ]
+    },
+    {
+      "from": ".",
+      "to": "project-notices",
+      "filter": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md",
+        "docs/DATA-LICENSES.md",
+        "docs/data-rights-audit.json",
+        "docs/PUBLIC-EDITION.md"
+      ]
+    }
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowElevation": false,
+    "allowToChangeInstallationDirectory": true,
+    "include": "desktop/installer.nsh"
+  },
+  "forceCodeSigning": true
+}

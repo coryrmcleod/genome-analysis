@@ -1,0 +1,49 @@
+{
+  "name": "genome-analysis",
+  "version": "0.14.104",
+  "private": true,
+  "main": "desktop/main.mjs",
+  "description": "Local genome variant explorer: open-source public preview",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "desktop": "electron .",
+    "desktop:preview": "node desktop/stage.mjs && electron-builder --config electron-builder.json --win --config.forceCodeSigning=false",
+    "desktop:release": "node desktop/stage.mjs && electron-builder --config electron-builder.json --win",
+    "test": "node scripts/test-public.mjs",
+    "catalog:expand": "node scripts/expand-catalog.mjs",
+    "pubmed": "node scripts/pubmed.mjs",
+    "pgs:update": "node scripts/stage-pgs-refresh.mjs",
+    "pgs:populations": "node scripts/import-pgs-populations.mjs",
+    "clinical:discover": "node scripts/discover-clinvar.mjs",
+    "clinical:update": "node scripts/import-clinvar-library.mjs",
+    "cpic:download": "node scripts/download-cpic-source.mjs",
+    "cpic:update": "node scripts/import-cpic-library.mjs",
+    "clinical:indels:discover": "node scripts/discover-indels.mjs",
+    "clinical:indels:update": "node scripts/import-clinvar-indels.mjs",
+    "research:update": "node scripts/import-research-library.mjs",
+    "clinical:effects": "node scripts/enrich-clinvar-effects.mjs",
+    "genes:validity": "node scripts/import-gene-validity.mjs",
+    "genes:drugs": "node scripts/import-gene-drugs.mjs",
+    "clinical:expert-assertions": "node scripts/import-expert-assertions.mjs",
+    "clinical:expert-indels": "node scripts/import-expert-indels.mjs",
+    "genes:dosage": "node scripts/import-gene-dosage.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "electron": "44.3.0",
+    "electron-builder": "26.15.3"
+  },
+  "license": "MIT",
+  "author": "coryrmcleod",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coryrmcleod/genome-analysis.git"
+  },
+  "homepage": "https://github.com/coryrmcleod/genome-analysis#readme",
+  "bugs": {
+    "url": "https://github.com/coryrmcleod/genome-analysis/issues"
+  }
+}

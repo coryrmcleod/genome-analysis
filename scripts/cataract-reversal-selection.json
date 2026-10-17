@@ -1,0 +1,3 @@
+[
+ {"id":"PGS001837","family":"Cataract","count":11617,"reviewedAssemblyReversals":true,"coverageContext":"UK Biobank research model evaluated for cataract in eight ancestry-group sample sets from the same cohort. Reported partial correlations are small and several intervals include zero; performance is not uniform across populations. GA computes the complete genetic sum only, without the study covariates. Not a current lens examination, visual-acuity estimate, surgery recommendation or calibrated personal risk."}
+]

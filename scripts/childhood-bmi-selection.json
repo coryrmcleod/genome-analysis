@@ -1,0 +1,8 @@
+[
+ {
+  "id":"PGS004610",
+  "family":"Childhood BMI",
+  "count":306,
+  "coverageContext":"Complete 306-variant research definition for childhood BMI, derived from simulated continuous BMI anchored to adults' recalled relative body size at age 10, rather than measured childhood BMI in UK Biobank. All coordinates, alleles and childhood coefficients match primary ESM Table 1. Evaluations in the 1958 birth cohort distinguish age 11 (4,704 participants) from age 44 (5,774 participants) and exceeding one SD above the standardized phenotype mean. Those odds ratios are not effects per unit of the raw genetic sum, predicted BMI, or personal obesity probabilities. Discovery coefficients use normalized phenotype units and clinical/technical covariates. GA retains deposited beta weights without reconstructing study normalization or clinical calibration. Mendelian-randomization findings conditional on adult BMI concern separate insulin-related traits and do not imply individual diabetes protection or support weight-gain advice. Childhood history, diagnosis, treatment benefit and clinical recommendations are not inferred."
+ }
+]

@@ -1,0 +1,2673 @@
+{
+  "reviewedOn": "2026-10-17",
+  "scope": "Release inventory and provider-level terms check; not an author-by-author permissions clearance or scientific validation.",
+  "softwareLicense": "MIT",
+  "datasets": [
+    {
+      "file": "ancestry-numerical-verification.json",
+      "sha256": "10c517368d93f54f1854ca58c2d54f2e71a7c0ca42f650f6cd8b9e481dc14786",
+      "bytes": 1128,
+      "version": 1,
+      "retrievedAt": null,
+      "included": false,
+      "reason": "Not needed in this edition or source-specific redistribution review is incomplete.",
+      "termsURL": null
+    },
+    {
+      "file": "ancestry-reference.json",
+      "sha256": "0413c01df04fe979fe313718ef6956a0c23504ed05d97bbb05e3ea4a38e60b68",
+      "bytes": 11180992,
+      "version": "1.1.0",
+      "retrievedAt": "2026-10-02T08:52:49.002791+00:00",
+      "included": false,
+      "reason": "Not needed in this edition or source-specific redistribution review is incomplete.",
+      "termsURL": null
+    },
+    {
+      "file": "catalog.json",
+      "sha256": "0709b2b4e40e0c365ccf6d27a956fbf07e2e5239b9d81b8efc4096bfcb5b04d8",
+      "bytes": 342242,
+      "version": "0.2.0",
+      "retrievedAt": "2026-09-07T19:00:14.811Z",
+      "included": true,
+      "reason": "Project-authored catalog with cited variant facts and Ensembl reference annotations",
+      "termsURL": "https://www.ensembl.org/info/about/legal/disclaimer.html"
+    },
+    {
+      "file": "catalog.previous.json",
+      "sha256": "2a9d1ff24a7eb1ecde1e351185ed699a22372e74980ce87114e9ccf383f7b228",
+      "bytes": 342184,
+      "version": "0.2.0",
+      "retrievedAt": "2026-09-07T18:59:21.428Z",
+      "included": false,
+      "reason": "Not needed in this edition or source-specific redistribution review is incomplete.",
+      "termsURL": null
+    },
+    {
+      "file": "clinical-library.json",
+      "sha256": "97f2427c121085475e5618099e22c4164816074d1697e0e8fb309509c60b1a36",
+      "bytes": 11438001,
+      "version": "1.2.0",
+      "retrievedAt": "2026-09-08T00:23:03.546Z",
+      "included": true,
+      "reason": "ClinVar variant-level data; unrestricted distribution",
+      "termsURL": "https://www.ncbi.nlm.nih.gov/clinvar/docs/submit/"
+    },
+    {
+      "file": "cpic-library.json",
+      "sha256": "10e91cd6443b967bd9d666d4ae176778ec2223a1a511dd230bc5c5dc0f08e6f4",
+      "bytes": 1070729,
+      "version": "1.1.0",
+      "retrievedAt": "2026-09-08T00:29:37.319Z",
+      "included": true,
+      "reason": "CPIC curated data, CC0; retain source URLs, versions and access dates",
+      "termsURL": "https://github.com/cpicpgx/cpic-data/blob/main/LICENSE.md"
+    },
+    {
+      "file": "expert-assertion-library.json",
+      "sha256": "6741bdeb069c4e15d052864e3d0e3bb3609c23e3e1e6ec88546a0def56f75154",
+      "bytes": 4218056,
+      "version": "1.1.0",
+      "retrievedAt": "2026-09-08T00:42:53.507Z",
+      "included": true,
+      "reason": "ClinGen curated content, CC0; attribution retained",
+      "termsURL": "https://clinicalgenome.org/docs/terms-of-use/"
+    },
+    {
+      "file": "gene-dosage-library.json",
+      "sha256": "7f33bbb8b360f3eee6f2318e488daf0b6e1c431d596e24472ac6a2cd7d82667e",
+      "bytes": 26684,
+      "version": "1.0.0",
+      "retrievedAt": "2026-09-08T01:00:14.004Z",
+      "included": true,
+      "reason": "ClinGen curated content, CC0; attribution retained",
+      "termsURL": "https://clinicalgenome.org/docs/terms-of-use/"
+    },
+    {
+      "file": "gene-drug-library.json",
+      "sha256": "bdfd7a37e9aed9eeaf3a8d5d3f7969f78235558e1de40e42de17d091b0e32252",
+      "bytes": 35705,
+      "version": "1.0.0",
+      "retrievedAt": "2026-09-08T00:27:54.957Z",
+      "included": true,
+      "reason": "CPIC curated data, CC0; retain source URLs, versions and access dates",
+      "termsURL": "https://github.com/cpicpgx/cpic-data/blob/main/LICENSE.md"
+    },
+    {
+      "file": "gene-validity-library.json",
+      "sha256": "8ba49cb2cfb386902d3a6bab73e2e691d285b46d51c177bb90e6e174e14b6846",
+      "bytes": 52274,
+      "version": "1.0.0",
+      "retrievedAt": "2026-09-08T00:27:54.153Z",
+      "included": true,
+      "reason": "ClinGen curated content, CC0; attribution retained",
+      "termsURL": "https://clinicalgenome.org/docs/terms-of-use/"
+    },
+    {
+      "file": "pgs-evaluation.json",
+      "sha256": "3c831f179c4bd291c56f6ae1c7bcad053ed033b78e107703aa1da597e38b4945",
+      "bytes": 1163531,
+      "version": 1,
+      "retrievedAt": "2026-10-02T15:28:45.827Z",
+      "included": false,
+      "reason": "Held pending author-specific score and/or reference-data redistribution review; not covered by the software license.",
+      "termsURL": null
+    },
+    {
+      "file": "pgs-library.json",
+      "sha256": "dd926e1e16632dc0e5b07aab34881ba71a437a4200618692e18e67b8404df6ea",
+      "bytes": 120723465,
+      "version": "1.89.0",
+      "retrievedAt": "2026-10-02T15:27:14.908Z",
+      "included": false,
+      "reason": "Held pending author-specific score and/or reference-data redistribution review; not covered by the software license.",
+      "termsURL": null
+    },
+    {
+      "file": "pgs-populations.json",
+      "sha256": "8064ae217efc7de683b5b98eff7a7ccb6a6f8bf9fec7b8c819647d04284b80c2",
+      "bytes": 36687985,
+      "version": "1.1.0",
+      "retrievedAt": "2026-10-02T15:30:05.386Z",
+      "included": false,
+      "reason": "Held pending author-specific score and/or reference-data redistribution review; not covered by the software license.",
+      "termsURL": null
+    },
+    {
+      "file": "pgs-score-reference.json",
+      "sha256": "505ae02e9dc6fe4b3bb3bcf6234291627073c5602814ff8397e6b917aa1dcd6b",
+      "bytes": 11824447,
+      "version": "1.0.0",
+      "retrievedAt": "2026-10-02T15:30:54.260Z",
+      "included": false,
+      "reason": "Held pending author-specific score and/or reference-data redistribution review; not covered by the software license.",
+      "termsURL": null
+    },
+    {
+      "file": "pgs-score-sensitivity.json",
+      "sha256": "c667c4d88ac52c0075ff1ee51973ba5cc5169eff0f5ecc549d7c0bc4927981a2",
+      "bytes": 33785412,
+      "version": "1.0.0",
+      "retrievedAt": "2026-10-02T15:31:03.091Z",
+      "included": false,
+      "reason": "Held pending author-specific score and/or reference-data redistribution review; not covered by the software license.",
+      "termsURL": null
+    },
+    {
+      "file": "psychiatric-gwas-library.json",
+      "sha256": "117cc823e79863c3a18bdc5be1edcb3f3cfd982c868b93caebbd94b13929525e",
+      "bytes": 2990,
+      "version": "1.0.0",
+      "retrievedAt": "2026-09-17T00:00:00.000Z",
+      "included": false,
+      "reason": "Not needed in this edition or source-specific redistribution review is incomplete.",
+      "termsURL": null
+    },
+    {
+      "file": "research-library.json",
+      "sha256": "7197e1dc87f7398f577cbd3c3ea6a17a90b0203a9adbd3f4f52b33239211c1a4",
+      "bytes": 3457442,
+      "version": "1.2.0",
+      "retrievedAt": "2026-09-08T01:03:39.848Z",
+      "included": true,
+      "reason": "GWAS Catalog association metadata and PubMed bibliographic metadata, not article full text or summary-statistics files",
+      "termsURL": "https://www.ebi.ac.uk/gwas/docs/faq/"
+    },
+    {
+      "file": "short-variant-library.json",
+      "sha256": "03aabcc2411612ca1915ce100f6ad5d6ac6ed08cfa98ac82697dab69a4a4bdeb",
+      "bytes": 12750001,
+      "version": "1.2.0",
+      "retrievedAt": "2026-09-08T00:21:20.477Z",
+      "included": true,
+      "reason": "ClinVar variant-level data with derived normalization metadata; FASTA itself is excluded",
+      "termsURL": "https://www.ncbi.nlm.nih.gov/clinvar/docs/submit/"
+    }
+  ],
+  "withheldScoreModels": [
+    {
+      "id": "PGS000034",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000034/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.2337/db17-1156",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000060",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000060/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pone.0126361",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000061",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000061/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pone.0126361",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000063",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000063/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pone.0126361",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000011",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000011/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/eurheartj/ehv462",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000127",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000127/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pmed.1002383",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000305",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000305/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/circgen.119.002775",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000822",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000822/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-019-11576-0",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005111",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005111/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-025-56695-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003461",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003461/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41746-023-00781-3",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003858",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003858/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ebiom.2023.104536",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003859",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003859/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s12916-023-02832-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004224",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004224/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.18332/tid/162607",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005317",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005317/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41397-024-00333-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004904",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004904/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1002/ijc.34648",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004863",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004863/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1002/alz.13378",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003746",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003746/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ebiom.2023.104454",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012514",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012514/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-026-72457-x",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005096",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005096/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajpc.2024.100884",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012520",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012520/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-026-72457-x",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000029",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000029/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1007/s10549-016-3953-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004601",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004601/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1111/cge.14315",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004245",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004245/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41698-023-00377-w",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004899",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004899/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-020-17558-x",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001834",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001834/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000037",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000037/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/S2213-2600(13)70101-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005206",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005206/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.bone.2024.117070",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000764",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000764/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1167/iovs.62.2.28",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001883",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001883/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004647",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004647/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-024-47357-7",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004118",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004118/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004903",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004903/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.jaci.2023.07.011",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000755",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000755/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41598-020-66064-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005308",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005308/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s13073-025-01561-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004105",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004105/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019957",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019957/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.3390/biomedicines12071619",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001885",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001885/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005320",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005320/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41397-024-00333-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000827",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000827/",
+      "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "publicationDOI": "10.1038/s41598-019-43058-0",
+      "status": "Explicit NC/ND restrictions: not included in the public edition."
+    },
+    {
+      "id": "PGS000828",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000828/",
+      "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "publicationDOI": "10.1038/s41598-019-43058-0",
+      "status": "Explicit NC/ND restrictions: not included in the public edition."
+    },
+    {
+      "id": "PGS019956",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019956/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s12889-024-19127-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004104",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004104/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000306",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000306/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/circgen.119.002775",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003763",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003763/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1001/jamaneurol.2023.0183",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000809",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000809/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41431-021-00914-w",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000086",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000086/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-021-21288-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004591",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004591/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s12916-023-02783-0",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000193",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000193/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41380-019-0546-6",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002729",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002729/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1002/art.42246",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003960",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003960/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1002/art.42544",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004953",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004953/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/bjd/ljad333",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004119",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004119/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000655",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000655/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s12916-019-1364-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003447",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003447/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.3389/frph.2021.793226",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004244",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004244/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41698-023-00377-w",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004913",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004913/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1097/hc9.0000000000000431",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003200",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003200/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004246",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004246/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41698-023-00377-w",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004250",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004250/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41698-023-00377-w",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004322",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004322/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.3389/fcvm.2023.1076745",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002307",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002307/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s12916-022-02341-0",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000300",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000300/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/circgen.119.002775",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003165",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003165/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012519",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012519/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-026-72457-x",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005319",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005319/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41397-024-00333-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003442",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003442/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41598-023-28057-6",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002264",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002264/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1053/j.gastro.2022.01.016",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004924",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004924/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.parkreldis.2023.105815",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000328",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000328/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1136/annrheumdis-2019-216227",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004222",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004222/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.jpsychores.2023.111381",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002794",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002794/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1111/jth.15879",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003437",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003437/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1001/jamanetworkopen.2022.46311",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003420",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003420/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s12967-022-03701-3",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018991",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018991/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003456",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003456/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pone.0280657",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000068",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000068/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1136/jmedgenet-2018-105313",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000869",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000869/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1210/clinem/dgz102",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000870",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000870/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1210/clinem/dgz102",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002256",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002256/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s13098-022-00788-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000341",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000341/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1136/annrheumdis-2020-218558",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000753",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000753/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/circulationaha.120.047544",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000760",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000760/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-021-23661-4",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005158",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005158/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.2337/dc23-1503",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005282",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005282/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1007/s43657-023-00138-6",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001829",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001829/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003453",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003453/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41375-022-01711-0",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000737",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000737/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/eurheartj/ehz435",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000739",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000739/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-020-00764-0",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002292",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002292/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1001/jamaophthalmol.2022.0891",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004117",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004117/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001872",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001872/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012550",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012550/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.envres.2023.117984",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012562",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012562/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.envres.2024.118182",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012582",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012582/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ypmed.2024.107942",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018956",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018956/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002261",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002261/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1158/1055-9965.epi-21-0782",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003454",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003454/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41375-022-01711-0",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005160",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005160/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pmed.1004534",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001827",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001827/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000071",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000071/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-021-21288-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018671",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018671/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019954",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019954/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1001/jamanetworkopen.2024.13708",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001894",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001894/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001855",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001855/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018505",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018505/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002291",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002291/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-022-29570-4",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001819",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001819/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002739",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002739/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41398-022-02029-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001308",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001308/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pgen.1010105",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003417",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003417/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-022-35345-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019061",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019061/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003414",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003414/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-022-34732-5",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000114",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000114/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1136/annrheumdis-2020-217421",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002266",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002266/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/hmg/ddac037",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001835",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001835/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001823",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001823/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001824",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001824/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019395",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019395/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019270",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019270/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001826",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001826/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019687",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019687/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018881",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018881/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003760",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003760/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s13073-023-01163-w",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004165",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004165/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1002/ijc.34765",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000638",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000638/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2020.08.025",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000653",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000653/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2020.08.025",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018695",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018695/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005165",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005165/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pmed.1004534",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003861",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003861/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s12916-023-02844-4",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000768",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000768/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/circulationaha.120.045956",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004907",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004907/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/ejendo/lvad086",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000735",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000735/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/eurheartj/ehz435",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000736",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000736/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/eurheartj/ehz435",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000315",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000315/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/circgen.119.002775",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000307",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000307/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/circgen.119.002775",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002875",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002875/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002810",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002810/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-019-0407-x",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000816",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000816/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-021-22338-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000871",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000871/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1210/clinem/dgz102",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000778",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000778/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-020-00762-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000723",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000723/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/jncics/pkaa021",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000069",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000069/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1136/jmedgenet-2018-105313",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000817",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000817/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-021-22338-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003486",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003486/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.jid.2023.01.021",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002282",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002282/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1002/hep4.1932",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004905",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004905/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1073/pnas.2302708120",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005388",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005388/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pone.0344360",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005159",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005159/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1136/heartjnl-2023-323333",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000877",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000877/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/ng.3714",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004597",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004597/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.3390/nu15040864",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005230",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005230/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/strokeaha.123.044284",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012563",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012563/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/eurheartj/ehad886",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000129",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000129/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pmed.1002383",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000130",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000130/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pmed.1002383",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000131",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000131/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pmed.1002383",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000132",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000132/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pmed.1002383",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000062",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000062/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pone.0126361",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002749",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002749/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1002/art.42156",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003352",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003352/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-022-34163-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002732",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002732/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-022-01078-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000726",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000726/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1053/j.gastro.2020.12.011",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000803",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000803/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1177/09612033211014952",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000658",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000658/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s13073-021-00831-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000659",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000659/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s13073-021-00831-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000661",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000661/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s13073-021-00831-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003401",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003401/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ijcard.2022.11.024",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019365",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019365/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019552",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019552/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003436",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003436/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1136/bmj-2022-071707",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003396",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003396/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/ije/dyac206",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000902",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000902/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/s1474-4422(19)30320-5",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001774",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001774/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.3390/genes12081278",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001775",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001775/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1002/dad2.12229",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003574",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003574/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pone.0277378",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005250",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005250/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.jlr.2025.100752",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005283",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005283/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1007/s43657-023-00138-6",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005284",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005284/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1007/s43657-023-00138-6",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005169",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005169/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1001/jamanetworkopen.2023.39254",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005115",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005115/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-025-56695-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005116",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005116/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-025-56695-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004699",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004699/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-024-44917-9",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005089",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005089/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41525-025-00529-w",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004592",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004592/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1111/jdv.18466",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004588",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004588/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1001/jamanetworkopen.2022.47162",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004598",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004598/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.3390/nu15040864",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000721",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000721/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/jncics/pkaa021",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000722",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000722/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/jncics/pkaa021",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000725",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000725/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/jncics/pkaa021",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002283",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002283/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1002/hep4.1932",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002731",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002731/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1212/wnl.0000000000200544",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004321",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004321/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/circulationaha.119.043805",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004326",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004326/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1289/ehp10710",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000339",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000339/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/hmg/ddaa156",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000813",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000813/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1136/jmedgenet-2020-107251",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003412",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003412/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1111/bjd.18703",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000812",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000812/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1002/dad2.12142",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000823",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000823/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/s1474-4422(18)30053-x",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000876",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000876/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1002/acn3.716",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003404",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003404/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/atvbaha.116.308027",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003185",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003185/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003201",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003201/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000865",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000865/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1111/joim.12719",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000866",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000866/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1111/joim.12719",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001777",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001777/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.jhep.2021.10.005",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002245",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002245/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.xgen.2021.100066",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002277",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002277/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1007/s00125-022-05671-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005117",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005117/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-025-56695-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005118",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005118/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-025-56695-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005119",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005119/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-025-56695-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000777",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000777/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-021-00847-6",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004238",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004238/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1002/jgm.3305",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004241",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004241/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41698-023-00377-w",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004243",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004243/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41698-023-00377-w",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004247",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004247/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41698-023-00377-w",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004248",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004248/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41698-023-00377-w",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000656",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000656/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1186/s12916-019-1364-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002950",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002950/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018740",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018740/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019031",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019031/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019385",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019385/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019180",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019180/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000313",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000313/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/circgen.119.002775",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012521",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012521/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-026-72457-x",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019959",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019959/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.2337/dc23-1691",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012584",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012584/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41531-024-00700-7",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012589",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012589/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.3389/ijph.2024.1606868",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012579",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012579/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1111/joim.13780",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012580",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012580/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1111/joim.13780",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005210",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005210/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41591-024-02837-7",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002233",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002233/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.2217/pgs-2018-0081",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001876",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001876/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001814",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001814/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001831",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001831/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001875",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001875/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000906",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000906/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1093/gerona/glaa289",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003736",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003736/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ebiom.2023.104454",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003737",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003737/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ebiom.2023.104454",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003741",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003741/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ebiom.2023.104454",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003742",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003742/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ebiom.2023.104454",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003744",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003744/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ebiom.2023.104454",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS012577",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS012577/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1080/20008066.2024.2366055",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005171",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005171/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.dsx.2024.102971",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004132",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004132/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004133",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004133/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004121",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004121/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004111",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004111/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003739",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003739/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ebiom.2023.104454",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004174",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004174/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41598-023-37580-5",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004270",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004270/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-024-48654-x",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004108",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004108/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004116",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004116/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004122",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004122/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004127",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004127/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004890",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004890/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1158/0008-5472.can-23-3854",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004891",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004891/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1158/0008-5472.can-23-3854",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004892",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004892/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1158/0008-5472.can-23-3854",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004009",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004009/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004914",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004914/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/atvbaha.119.313381",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004915",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004915/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/atvbaha.119.313381",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004916",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004916/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1161/atvbaha.119.313381",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001856",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001856/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001803",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001803/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001813",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001813/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001842",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001842/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001861",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001861/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001865",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001865/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001905",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001905/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001948",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001948/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001866",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001866/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000040",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000040/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pgen.1004137",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004285",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004285/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-024-48654-x",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005208",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005208/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41591-024-02837-7",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003731",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003731/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1007/s00125-023-05870-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003853",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003853/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1001/jamanetworkopen.2023.5565",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001811",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001811/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004003",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004003/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2024.06.003",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004596",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004596/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.3390/nu15040864",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004900",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004900/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pgen.1008790",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004901",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004901/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1371/journal.pgen.1008790",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004586",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004586/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-024-47204-9",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003730",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003730/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1007/s00125-023-05870-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003732",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003732/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1007/s00125-023-05870-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003733",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003733/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1007/s00125-023-05870-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003734",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003734/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1007/s00125-023-05870-2",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003854",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003854/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1001/jamanetworkopen.2023.5565",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003855",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003855/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1001/jamanetworkopen.2023.5565",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003856",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003856/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1001/jamanetworkopen.2023.5565",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003769",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003769/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003774",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003774/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003779",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003779/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003786",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003786/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003791",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003791/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003796",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003796/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003803",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003803/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003808",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003808/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003813",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003813/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003820",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003820/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003825",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003825/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003830",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003830/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004637",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004637/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-024-47357-7",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004652",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004652/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-024-47357-7",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004657",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004657/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41467-024-47357-7",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002876",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002876/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003166",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003166/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003180",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003180/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003310",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003310/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS002920",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS002920/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003618",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003618/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003652",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003652/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003653",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003653/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003654",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003654/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003717",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003717/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003619",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003619/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003634",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003634/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003651",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003651/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003705",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003705/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003659",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003659/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003663",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003663/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003665",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003665/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003672",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003672/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003708",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003708/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003837",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003837/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003844",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003844/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01501-z",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004225",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004225/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.3390/nu15092144",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004610",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004610/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1007/s00125-023-05923-6",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018440",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018440/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018450",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018450/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018510",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018510/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018575",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018575/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018605",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018605/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018645",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018645/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018951",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018951/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019200",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019200/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019205",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019205/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS019747",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS019747/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS018886",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS018886/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41586-025-09350-y",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003592",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003592/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41588-023-01425-8",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001812",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001812/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001817",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001817/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001847",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001847/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001858",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001858/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001859",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001859/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001863",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001863/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001874",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001874/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001906",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001906/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS001967",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS001967/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2021.11.008",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS000824",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000824/",
+      "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "publicationDOI": "10.1038/s41598-019-43058-0",
+      "status": "Explicit NC/ND restrictions: not included in the public edition."
+    },
+    {
+      "id": "PGS000745",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS000745/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.jid.2018.05.023",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005248",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005248/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.jlr.2025.100752",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS005249",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS005249/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.jlr.2025.100752",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004221",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004221/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1038/s41380-023-02107-x",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS004918",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS004918/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.neurobiolaging.2020.11.009",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003256",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003256/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    },
+    {
+      "id": "PGS003271",
+      "catalogURL": "https://www.pgscatalog.org/score/PGS003271/",
+      "license": "PGS obtained from the Catalog should be cited appropriately, and used in accordance with any licensing restrictions set by the authors. See EBI Terms of Use (https://www.ebi.ac.uk/about/terms-of-use/) for additional details.",
+      "publicationDOI": "10.1016/j.ajhg.2022.09.001",
+      "status": "Catalog notice requires checking original authors restrictions: review incomplete; not included."
+    }
+  ],
+  "excludedInputs": [
+    "All personal genomes, saved analyses, work and tmp directories",
+    "All downloaded paper/XML/PDF and original scoring-file fixtures",
+    "All whole-genome population reference files and FASTA sequences",
+    "Existing installers containing withheld data"
+  ]
+}

@@ -1,0 +1,28 @@
+// Public association discovery for existing score loci; no user genotype is accessed.
+import {readFile,writeFile,mkdir,rename} from 'node:fs/promises';import {createHash} from 'node:crypto';
+import {mapping,eligibleAssociations,frequencyFor} from './expand-catalog.mjs';import {getJSON,pubmedSummaries} from './reference-api.mjs';import {validateResearchLibrary} from '../public/research-library.js';
+const root=new URL('../',import.meta.url),data=new URL('public/data/',root),work=new URL('work/research-expansion/',root);await mkdir(work,{recursive:true});
+const load=async name=>JSON.parse(await readFile(new URL(name+'.json',data)));
+const [base,clinical,cpic,pgs]=await Promise.all(['catalog','clinical-library','cpic-library','pgs-library'].map(load));
+const previous=process.argv.includes('--fresh')?null:await load('research-library').catch(e=>{if(e.code==='ENOENT')return null;throw e;});if(previous)validateResearchLibrary(previous);
+const records=previous?structuredClone(previous.records):[],existing=new Set([...records.map(r=>r.id),...[base,clinical,cpic].flatMap(l=>l.records.map(r=>r.id))]),targets=pgs.targets.filter(t=>!existing.has(t.id));
+const requested=Number(process.argv.find(a=>a.startsWith('--target='))?.slice(9)||Math.max(1000,records.length));if(!Number.isSafeInteger(requested)||requested<records.length||requested>5000)throw Error('Target must retain the existing library and be at most 5000 records');
+const audit={startedAt:new Date().toISOString(),target:requested,retained:records.map(r=>r.id),candidateSource:'Installed PGS target IDs',accepted:[],skipped:[]};
+const category=t=>/vitamin|folate|iron|ferritin|calcium/i.test(t)?'Nutrition':/diabet|glucose|insulin|lipid|cholester|triglyceride|body mass|weight|hba1c|fatty|metabol|albumin/i.test(t)?'Metabolic':'Health';
+for(const target of targets){if(records.length>=audit.target)break;const id=target.id;try{
+ const url=`https://rest.ensembl.org/variation/human/${id}?content-type=application/json;pops=1;phenotypes=1`,raw=await getJSON(url);if(raw.name!==id)throw Error('Changed rsID');
+ const current=mapping(raw,'GRCh38'),expected=target.mappings.GRCh38;if(current.chrom!==expected.chrom||current.position!==expected.position||current.ref!==expected.ref||JSON.stringify(current.alleles.slice().sort())!==JSON.stringify(expected.alleles.slice().sort()))throw Error('Reference snapshot disagrees with installed score target');
+ const mappings={GRCh38:current,GRCh37:target.mappings.GRCh37};
+ const associations=eligibleAssociations(raw,id,mappings).filter(a=>!/(?:intelligence|cognitive|educational attainment|income|sexual|religio|political|criminal)/i.test(a.trait));if(!associations.length)throw Error('No eligible exact-variant association');
+ const a=associations[0],pmid=a.study.slice(5),publication=(await pubmedSummaries([pmid]))[pmid];if(publication.publicationTypes.some(t=>/retract|expression of concern/i.test(t)))throw Error('Publication concern');
+ const supplied=typeof a.genes==='string'?a.genes.trim():'';const gene=supplied&&!/^(?:NA|N\/A|NR|none|unknown|intergenic|-)$/i.test(supplied)?supplied:`Locus ${current.chrom}:${current.position}`;
+ records.push({id,gene,label:'GWAS research association',category:category(a.trait),trait:a.trait,effectAllele:a.risk_allele,priority:1,evidence:'Research association',reviewStatus:'API-linked; scientific review pending',mappings,frequency:frequencyFor(raw,a.risk_allele),referenceRetrievedAt:raw.referenceFetchedAt,literature:[publication],
+ summary:`The GWAS Catalog links this exact variant to ${a.trait}. This is a study association, not a causal or clinical classification.`,
+ caution:'Automated study linkage awaits independent scientific review. Nearby genes are not established causes. Effect scales, ancestry, replication and linkage disequilibrium matter; do not interpret this entry as a personal trait measurement or disease probability.',
+ association:{source:a.source,trait:a.trait,reportedAllele:a.risk_allele,pvalue:a.pvalue,reportedEffect:a.beta_coefficient||null,pmid,alleleHarmonization:'API-reported allele matches both reference builds; independent study-strand review pending',studyAncestry:'Not retrieved; EUR reference frequency is not study ancestry',selection:'Smallest p-value among eligible exact-variant records for this locus; not a ranking of effect size or importance'},
+ sources:[{label:`PubMed ${pmid}: ${publication.title}`,url:publication.url},{label:'GWAS Catalog variant associations',url:`https://www.ebi.ac.uk/gwas/variants/${id}`}],referenceSources:[url],referenceCacheSha256:createHash('sha256').update(JSON.stringify(raw)).digest('hex')});audit.accepted.push({id,pmid,trait:a.trait});if(records.length%25===0)console.log('Research records accepted',records.length,'/',audit.target);
+ }catch(e){audit.skipped.push({id,reason:e.message});}
+}
+audit.completedAt=new Date().toISOString();await writeFile(new URL('audit.json',work),JSON.stringify(audit,null,2)+'\n');if(records.length<audit.target)throw Error('Requested research-library size was not reached; existing library preserved');
+const library={version:'1.2.0',retrievedAt:audit.completedAt,source:'NHGRI-EBI GWAS Catalog via Ensembl; PubMed bibliographic verification',scope:'Selected research associations at existing PGS target positions; automated linkage, not clinical curation.',scoreTargetReferenceProvenance:pgs.referenceSources,records};validateResearchLibrary(library);
+const next=new URL('research-library.next.json',data);await writeFile(next,JSON.stringify(library,null,2)+'\n');await rename(next,new URL('research-library.json',data));console.log(JSON.stringify({installed:records.length,skipped:audit.skipped.length}));

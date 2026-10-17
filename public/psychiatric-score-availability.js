@@ -1,0 +1,19 @@
+import {htmlEscape as e} from './workspace-view.js';
+// Reviewed candidate inventory, not a claim that these are the best clinical models.
+export const PSYCHIATRIC_SCORE_REVIEW=Object.freeze([
+ {condition:'Depression-related endpoints',models:['PGS004591','PGS000193','PGS003442','PGS001829'],note:'Separate endpoints and evaluation populations; these scores must not be combined or interpreted as symptom severity.'},
+ {condition:'Alcohol-related disorders',models:['PGS018956','PGS002739'],note:'Separate broad Han Chinese and African American alcohol-use-disorder research endpoints, not drinking behavior, character or a substance-use diagnosis. Do not combine their scores.'},
+ {condition:'Attention-deficit/hyperactivity disorder',models:['PGS003753'],blocked:'The complete 35,445-term candidate includes an unsupported indel and additional terms without verified mappings on both builds.'},
+ {condition:'Autism spectrum disorder',models:['PGS000327'],blocked:'The complete 35,087-term candidate has a harmonization-conflict flag and an unresolved multi-ID coordinate. No terms are dropped to force a score.'},
+ {condition:'Generalized anxiety disorder',models:['PGS018943'],blocked:'The complete 21,630-term candidate has a missing published GRCh37 coordinate. Additional independent mapping evidence is under review; no coordinate repair has been installed.'},
+ {condition:'Post-traumatic stress disorder',models:['PGS005393'],blocked:'The deposited weight scale is unresolved: Catalog beta metadata and the numerical weight pattern need reconciliation. No logarithm or other weight transformation is guessed.'},
+ {condition:'Schizophrenia',models:['PGS000133'],blocked:'This complete 604,645-term candidate exceeds the current verified workload and also has a GRCh37 harmonization-conflict flag and a missing GRCh38 position. Its NR weight label needs methods review. Increasing capacity alone would not make it usable; no terms are dropped.'},
+ {condition:'Bipolar disorder',models:['PGS002786'],blocked:'This complete 948,996-term effect-only candidate exceeds the current verified workload and has a missing harmonized position for rs2067666 on both builds. Increasing capacity alone would not make it usable; it is not truncated.'}
+]);
+export function psychiatricScoreAvailability(library){
+ const installed=new Map((library?.models||[]).map(m=>[m.id,m]));
+ return PSYCHIATRIC_SCORE_REVIEW.map(r=>({...r,entries:r.models.map(id=>({id,installed:installed.has(id),context:installed.get(id)?.coverageContext||installed.get(id)?.publicationCaveat||''}))}));
+}
+export function psychiatricAvailabilityHtml(library){
+ return '<details class="score-note"><summary>Reviewed psychiatric score availability</summary><p>This is a public-library inventory, not a result from your genome. An indexed GWAS dataset is not an installed polygenic score. A missing score says nothing about whether a person has a condition. Other psychiatric endpoints without an admitted complete model remain unavailable; this is not an exhaustive literature review.</p>'+psychiatricScoreAvailability(library).map(r=>'<section><h4>'+e(r.condition)+'</h4>'+(r.note?'<p>'+e(r.note)+'</p>':'')+r.entries.map(m=>'<p><strong>'+e(m.id)+' · '+(m.installed?'Installed research model':'Not installed')+'</strong> · <a href="https://www.pgscatalog.org/score/'+e(m.id)+'/" target="_blank" rel="noreferrer">Published source ↗</a></p><p>'+e(m.installed?m.context||'See the score card for its exact endpoint, population and limitations.':r.blocked||'No verified complete model is installed for this reviewed candidate.')+'</p>').join('')+'</section>').join('')+'<p>Installed weights and evidence work offline. These models do not provide diagnoses, calibrated personal probabilities, treatment guidance or behavioral judgments. The raw OpenMed/PGC GWAS collection remains remote; its association rows are not silently converted into score weights.</p></details>';
+}

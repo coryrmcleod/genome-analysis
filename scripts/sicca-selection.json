@@ -1,0 +1,3 @@
+[
+ {"id":"PGS001308","family":"Sjogren syndrome or sicca syndrome","count":7,"allowCoordinateIds":true,"reviewedSiccaMethod":true,"coverageContext":"Complete seven-term UK Biobank BASIL/snpnet research model for a combined Sjogren/sicca endpoint. Exact publication and source hashes establish additive use of unchanged regression coefficients; Catalog weight type remains NR, with no odds-ratio transformation. Held-out white British evaluation had 135 cases and genetic-only AUROC about0.603; other ancestry groups had very small case counts. Clinical-covariate performance is not GA genetic-score performance. Not a diagnosis, confirmation of autoimmune disease, symptom explanation or treatment guide."}
+]

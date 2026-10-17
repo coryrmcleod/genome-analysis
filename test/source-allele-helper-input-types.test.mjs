@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {harmonizeModelAlleles} from '../public/allele-harmonization.js';import {effectAlleleCandidates} from '../public/effect-only-pgs.js';
+test('source allele helpers reject coercion and incomplete reference inventories',()=>{
+ for(const effect of [new String('A'),undefined,null,{},1,'','N','AA','toString']){assert.throws(()=>harmonizeModelAlleles(effect,'G',['A','G','T','C']));assert.throws(()=>effectAlleleCandidates(effect,['A','T']));assert.throws(()=>harmonizeModelAlleles('A',effect,['A','G','T','C']));}
+ for(const reference of ['AG',new String('AG'),{},null,undefined,[],Array(2),['A',undefined],['A',new String('G')],['A','N'],['A','']]){assert.throws(()=>harmonizeModelAlleles('A','G',reference));assert.throws(()=>effectAlleleCandidates('A',reference));}
+ const sparse=['A','G'];delete sparse[0];assert.throws(()=>harmonizeModelAlleles('A','G',sparse));assert.throws(()=>effectAlleleCandidates('A',sparse));
+});
+test('all canonical source pairs and reference subsets preserve supported allele directions',()=>{
+ const bases=['A','C','G','T'],complement={A:'T',T:'A',C:'G',G:'C'};
+ for(let mask=1;mask<16;mask++){const reference=bases.filter((_,i)=>mask&(1<<i));for(const effect of bases){const expected=[effect,complement[effect]].filter(a=>reference.includes(a));if(expected.length){assert.deepEqual(effectAlleleCandidates(effect,reference),expected);assert.deepEqual(effectAlleleCandidates(effect,[...reference,'AGA']),expected);}else assert.throws(()=>effectAlleleCandidates(effect,reference));for(const other of bases.filter(a=>a!==effect)){if(reference.includes(effect)&&reference.includes(other))assert.deepEqual(harmonizeModelAlleles(effect,other,reference),{effectAllele:effect,otherAllele:other,reverseComplemented:false});else if(reference.includes(complement[effect])&&reference.includes(complement[other]))assert.deepEqual(harmonizeModelAlleles(effect,other,reference),{effectAllele:complement[effect],otherAllele:complement[other],reverseComplemented:true});else assert.throws(()=>harmonizeModelAlleles(effect,other,reference));}}}
+ assert.deepEqual(harmonizeModelAlleles('A','G',['A','G','AGA']),{effectAllele:'A',otherAllele:'G',reverseComplemented:false});
+});

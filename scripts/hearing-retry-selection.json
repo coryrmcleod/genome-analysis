@@ -1,0 +1,3 @@
+[
+ {"id":"PGS001891","family":"Hearing difficulty","count":19960,"reviewedAssemblyReversals":true,"coverageContext":"UK Biobank research model for reported hearing difficulty/problems, not measured audiometric thresholds or a specific sensorineural diagnosis. Partial correlations are small and vary across ancestry groups; several intervals include zero. GA computes the genetic component, not the covariate-adjusted study prediction. Not a current hearing test, hearing-aid recommendation or calibrated personal probability."}
+]

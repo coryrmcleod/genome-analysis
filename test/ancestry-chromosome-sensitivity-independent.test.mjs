@@ -1,0 +1,9 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {createHash} from 'node:crypto';import {validateAncestryReference,estimateAncestry,validateSavedAncestry} from '../public/ancestry.js';
+const endpoints=JSON.parse(fs.readFileSync('test/fixtures/ancestry/chromosome-sensitivity-independent-endpoints.json')),sourceBytes=fs.readFileSync('test/fixtures/ancestry/heldout-original-independent-corners.json'),source=JSON.parse(sourceBytes),panelBytes=fs.readFileSync('public/data/ancestry-reference.json');assert.equal(createHash('sha256').update(sourceBytes).digest('hex'),endpoints.sourceFixtureSha256);assert.equal(createHash('sha256').update(panelBytes).digest('hex'),endpoints.referenceSha256);const panel=validateAncestryReference(JSON.parse(panelBytes));assert.deepEqual(endpoints.groupCodes,panel.groups.map(g=>g.code));
+for(const build of ['GRCh37','GRCh38'])test(`chromosome sensitivity endpoints agree with independent 127-face fits on ${build}`,()=>{
+ assert.equal(endpoints.cases.length,10);
+ for(const expected of endpoints.cases){assert.equal(new Set(expected.omittedChromosomes).size,22);const fixture=source.cases.find(c=>c.publicSample===expected.publicSample);assert.ok(fixture);const actual=estimateAncestry({build,format:'VCF',results:panel.markers.map((m,i)=>({id:m.id,status:fixture.dosages[i]===null?'No call':'Called',alleles:fixture.dosages[i]===null?null:Array.from({length:2},(_,copy)=>copy<fixture.dosages[i]?m.alt:m.mappings[build].ref)}))},panel);assert.equal(actual.status,'Estimated');
+ for(const [i,code] of endpoints.groupCodes.entries()){const g=actual.groups.find(g=>g.code===code);assert.ok(Math.abs(g.sensitivityLow-expected.low[i])<2e-7,`${fixture.publicSample} ${code} low`);assert.ok(Math.abs(g.sensitivityHigh-expected.high[i])<2e-7,`${fixture.publicSample} ${code} high`);}
+ assert.deepEqual(validateSavedAncestry(JSON.parse(JSON.stringify(actual))),actual);
+ }
+});

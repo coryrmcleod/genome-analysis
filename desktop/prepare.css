@@ -1,0 +1,3 @@
+body{font:17px system-ui;line-height:1.6;max-width:750px;margin:40px auto;padding:0 24px;color:#173d39;background:#f5f5ee}h1{font-size:32px}button{background:#1c5d54;color:white;padding:12px 22px;border:0;border-radius:8px;font:inherit;cursor:pointer}button:disabled{opacity:.5}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;max-height:250px;overflow:auto}#status{white-space:pre-wrap;overflow-wrap:anywhere}
+
+#preparation-duration{margin:12px 0;font-size:15px}

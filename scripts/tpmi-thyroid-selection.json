@@ -1,0 +1,10 @@
+[
+  {
+    "id": "PGS018580",
+    "family": "Thyroid cancer",
+    "count": 966,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 966-term Lassosum2 research score for the TPMI thyroid cancer recorded-code endpoint (193, V10.87,C73, Z85.850), including history codes. Current deposited discovery, training and evaluation definitions and counts match primary Supplementary Tables S1 and S10. Training included 1696 cases and 76635 controls; evaluation included 439 cases and 19139 controls of East Asian ancestry. Primary genetic-only AUROC is 0.620867288953455 and adjusted AUROC is 0.748371612020489. Genetic-only variance explained is 0.0109986389582609; deposited adjusted variance explained is 0.0467787861969801 and includes sex, age, genotyping array and ten principal components. These adjusted metrics do not describe this app's raw genetic sum. The distinct primary partial variance measure 0.0102658514067862 is not substituted. This research endpoint does not establish a current diagnosis, tumor subtype, disease severity, prognosis, treatment benefit or personal disease probability. Reference arithmetic does not establish individual applicability; European ranks remain withheld where evaluation ancestry is incompatible."
+  }
+]

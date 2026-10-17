@@ -1,0 +1,56 @@
+##fileformat=VCFv4.3
+##FILTER=<ID=PASS,Description="All filters passed">
+##reference=GRCh38
+##source=GenomeAnalysis_SYNTHETIC_EXAMPLES_NOT_A_REAL_PERSON
+##FILTER=<ID=LowGQ,Description="Synthetic low-quality example">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Synthetic genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Synthetic quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Synthetic depth">
+##contig=<ID=chr1,length=248956422>
+##contig=<ID=chr2,length=242193529>
+##contig=<ID=chr3,length=198295559>
+##contig=<ID=chr4,length=190214555>
+##contig=<ID=chr5,length=181538259>
+##contig=<ID=chr6,length=170805979>
+##contig=<ID=chr7,length=159345973>
+##contig=<ID=chr8,length=145138636>
+##contig=<ID=chr9,length=138394717>
+##contig=<ID=chr10,length=133797422>
+##contig=<ID=chr11,length=135086622>
+##contig=<ID=chr12,length=133275309>
+##contig=<ID=chr13,length=114364328>
+##contig=<ID=chr14,length=107043718>
+##contig=<ID=chr15,length=101991189>
+##contig=<ID=chr16,length=90338345>
+##contig=<ID=chr17,length=83257441>
+##contig=<ID=chr18,length=80373285>
+##contig=<ID=chr19,length=58617616>
+##contig=<ID=chr20,length=64444167>
+##contig=<ID=chr21,length=46709983>
+##contig=<ID=chr22,length=50818468>
+##bcftools_normVersion=1.22+htslib-1.22.1
+##GenomeAnalysisIndelMatching=normalized_unsplit_GRCh38_v1
+##GenomeAnalysisReferenceSHA256=3b103f4742abfd54938fb0333e19ad067635c8eb86f1dbf0ce44b165c4292b50
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SYNTHETIC
+chr1	11796321	rs1801133	G	A,C	80	PASS	.	GT:GQ:DP	0/1:60:30
+chr1	169549811	rs6025	C	A,T	80	PASS	.	GT:GQ:DP	0/2:60:30
+chr2	135851076	rs4988235	G	A,C,T	80	PASS	.	GT:GQ:DP	0/0:60:30
+chr2	168906638	rs560887	T	C	80	PASS	.	GT:GQ:DP	0/0:60:30
+chr3	12351626	rs1801282	C	G,T	80	PASS	.	GT:GQ:DP	0/0:60:30
+chr6	26090951	rs1799945	C	G,T	80	PASS	.	GT:GQ:DP	0/1:60:30
+chr6	26092913	rs1800562	G	A	80	PASS	.	GT:GQ:DP	0/0:60:30
+chr6	160589086	rs10455872	A	G	80	PASS	.	GT:GQ:DP	0/1:60:30
+chr7	117480081	SYNTHETIC_clinvar:53158	GCGCCCGAGAGACCATGCAGAGGT	G	80	LowGQ	.	GT:GQ:DP	0/1:5:30
+chr8	117172544	rs13266634	C	A,T	80	PASS	.	GT:GQ:DP	0/2:60:30
+chr10	94761900	rs12248560	C	A,T	80	PASS	.	GT:GQ:DP	./.:.:.
+chr10	94781859	rs4244285	G	A,C,T	80	PASS	.	GT:GQ:DP	0/1:60:30
+chr10	112998590	rs7903146	C	G,T	80	PASS	.	GT:GQ:DP	0/2:60:30
+chr11	17388025	rs5219	T	A,C,G	80	PASS	.	GT:GQ:DP	0/0:60:30
+chr11	27658369	rs6265	C	T	80	PASS	.	GT:GQ:DP	0/1:60:30
+chr11	92975544	rs10830963	C	G,T	80	PASS	.	GT:GQ:DP	0/0:60:30
+chr12	21178615	rs4149056	T	A,C	80	LowGQ	.	GT:GQ:DP	0/0:5:30
+chr16	53786615	rs9939609	T	A	80	PASS	.	GT:GQ:DP	0/0:60:30
+chr17	43045709	SYNTHETIC_clinvar:266565	AG	A	80	PASS	.	GT:GQ:DP	0/1:60:30
+chr19	44908684	rs429358	T	C	80	PASS	.	GT:GQ:DP	0/0:60:30
+chr19	44908822	rs7412	C	T	80	PASS	.	GT:GQ:DP	0/1:60:30
+chr22	19963748	rs4680	G	A	80	PASS	.	GT:GQ:DP	0/1:60:30

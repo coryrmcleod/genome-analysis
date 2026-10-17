@@ -1,0 +1,3 @@
+[
+ {"id":"PGS000638","family":"Hodgkin lymphoma","count":16,"allowCoordinateIds":true,"reviewedHodgkinMethod":true,"coverageContext":"Complete16-term PRSweb Hodgkin-lymphoma code-group research model. Primary methods independently document additive use, while the deposited weight label remains NR and coefficients remain unchanged. MGI European evaluation included only71cases/704controls; adjusted AUROC0.601[0.535,0.671] indicates modest discrimination. The top1% comparison is highly uncertain (OR1.62[0.258,10.1]). Do not treat these study metrics as GA performance, personal probability, tumor detection, prognosis, subtype classification or screening/treatment guidance. No non-European applicability is established."}
+]

@@ -1,0 +1,3 @@
+[
+ {"id":"PGS019270","family":"Chronic sinusitis / postnasal-drip codes","count":16,"allowEffectOnly":true,"allowCoordinateIds":true,"coverageContext":"Complete 16-term TPMI Han Chinese model for the deposited chronic-sinusitis endpoint, whose case codes also include postnasal drip (473, 784.91, J32, R09.82). Development and evaluation report the same code list. Evaluation included 634 cases and 15,426 controls; AUROC about 0.643 includes sex, age, array and ten principal components and is not genetic-only or GA performance. No European evaluation is deposited, so GA withholds European reference ranks. This is not a diagnosis, an infection-versus-allergy classifier, or a basis for antibiotics or sinus surgery."}
+]

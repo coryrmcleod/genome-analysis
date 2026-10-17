@@ -1,0 +1,6 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {parseSamHeader,checkReference,callingCommands} from '../scripts/call-alignment.mjs';
+const header='@HD\tVN:1.6\tSO:coordinate\n@SQ\tSN:1\tLN:248956422\tM5:abcd\n@RG\tID:a\tSM:TEST';
+test('alignment dictionary enforces build, sample, sorting and MD5 agreement',()=>{const a=parseSamHeader(header),r=parseSamHeader(header);assert.doesNotThrow(()=>checkReference(a,r,'GRCh38'));assert.throws(()=>checkReference(a,r,'GRCh37'),/assembly/);assert.throws(()=>checkReference(a,parseSamHeader(header.replace('abcd','dcba')),'GRCh38'),/MD5/);assert.throws(()=>checkReference(parseSamHeader(header.replace('SO:coordinate','SO:unsorted')),r,'GRCh38'),/sorting/);assert.throws(()=>checkReference(parseSamHeader(header+'\n@RG\tID:b\tSM:SECOND'),r,'GRCh38'),/one distinct/);});
+test('targeted caller retains reference sites and computes quality before filtering',()=>{const commands=callingCommands({alignment:'/data/private.cram',reference:'/data/ref.fa',output:'/data/result'});assert.ok(commands[0].args.includes('-R'));assert.ok(commands[1].args.includes('GQ'));assert.ok(!commands[1].args.includes('-v'));assert.equal(commands[2].args[0],'filter');assert.ok(commands[2].args.some(a=>a.includes('FMT/DP<10')));assert.ok(commands.every(c=>!c.args.some(a=>a.startsWith('http'))));});

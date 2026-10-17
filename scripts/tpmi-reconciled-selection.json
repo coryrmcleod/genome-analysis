@@ -1,0 +1,130 @@
+[
+  {
+    "id": "PGS018440",
+    "family": "Viral warts HPV",
+    "count": 85,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 85-term Lassosum2 research score for Viral warts HPV, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.509082107426384 and adjusted AUC 0.683280878542083; deposited variance explained 0.053968544170915 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS018450",
+    "family": "Dermatophytosis of the body",
+    "count": 54,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 54-term Lassosum2 research score for Dermatophytosis of the body, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.538247883423032 and adjusted AUC 0.662269015752368; deposited variance explained 0.0158714836245363 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS018510",
+    "family": "Neoplasm of unspecified nature of digestive system",
+    "count": 26,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 26-term Lassosum2 research score for Neoplasm of unspecified nature of digestive system, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.503012223252286 and adjusted AUC 0.589270758996415; deposited variance explained 0.00504941180503608 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS018575",
+    "family": "Manlignant and unknown neoplasms of brain and nervous system",
+    "count": 43,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 43-term Lassosum2 research score for Manlignant and unknown neoplasms of brain and nervous system, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.511632478133381 and adjusted AUC 0.694722136484407; deposited variance explained 0.0125507429305348 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS018605",
+    "family": "Neoplasm of uncertain behavior",
+    "count": 25,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 25-term Lassosum2 research score for Neoplasm of uncertain behavior, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.503587409435633 and adjusted AUC 0.607702923835349; deposited variance explained 0.0257538896926995 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS018640",
+    "family": "Hemangioma and lymphangioma any site",
+    "count": 488,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 488-term Lassosum2 research score for Hemangioma and lymphangioma any site, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.528532087237648 and adjusted AUC 0.698213801768952; deposited variance explained 0.0140326852592564 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS018645",
+    "family": "Simple and unspecified goiter",
+    "count": 390,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 390-term Lassosum2 research score for Simple and unspecified goiter, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.578729057827418 and adjusted AUC 0.738843344079459; deposited variance explained 0.115309331127839 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS018886",
+    "family": "Other anemias",
+    "count": 136,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 136-term Lassosum2 research score for Other anemias, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.518940376887897 and adjusted AUC 0.732421469353053; deposited variance explained 0.193101599659063 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS018951",
+    "family": "Develomental delays and disorders",
+    "count": 21,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 21-term Lassosum2 research score for Develomental delays and disorders, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.523756813031279 and adjusted AUC 0.665435551771694; deposited variance explained 0.00498956798447422 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS019096",
+    "family": "Labyrinthitis",
+    "count": 245,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 245-term Lassosum2 research score for Labyrinthitis, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.493656354578303 and adjusted AUC 0.578168744486188; deposited variance explained 0.00841379388943974 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS019200",
+    "family": "Arrhythmia cardiac NOS",
+    "count": 11,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 11-term Lassosum2 research score for Arrhythmia cardiac NOS, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.52102068266516 and adjusted AUC 0.638737991197857; deposited variance explained 0.0352615446810649 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS019205",
+    "family": "Premature beats",
+    "count": 59,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 59-term Lassosum2 research score for Premature beats, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.514413354079138 and adjusted AUC 0.649741588414416; deposited variance explained 0.0100070329603073 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS019512",
+    "family": "Retention of urine",
+    "count": 234,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 234-term Lassosum2 research score for Retention of urine, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.504370941558442 and adjusted AUC 0.637050020292208; deposited variance explained 0.00400292333014265 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS019671",
+    "family": "Ankylosing spondylitis",
+    "count": 20,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 20-term Lassosum2 research score for Ankylosing spondylitis, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.818173285171657 and adjusted AUC 0.869466940315065; deposited variance explained 0.252835449314195 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS019747",
+    "family": "Fever of unknown origin",
+    "count": 44,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 44-term Lassosum2 research score for Fever of unknown origin, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.516291302928798 and adjusted AUC 0.651952696821525; deposited variance explained 0.0510317894299307 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  },
+  {
+    "id": "PGS019773",
+    "family": "Elevated prostate specific antigen PSA",
+    "count": 551,
+    "allowEffectOnly": true,
+    "allowCoordinateIds": true,
+    "coverageContext": "Complete 551-term Lassosum2 research score for Elevated prostate specific antigen PSA, trained and evaluated in Han Chinese TPMI participants. Discovery, training and evaluation counts match primary Supplementary Tables S1 and S10. The study reports genetic-only AUC 0.574029916542265 and adjusted AUC 0.684320365490778; deposited variance explained 0.0173306848730844 also includes sex, age, genotyping array and principal components. These adjusted metrics do not describe this app's raw genetic sum. The endpoint is the study's recorded-code definition; it does not establish a diagnosis, cause, tumor histology or subtype, infection, disease severity, prognosis, treatment benefit or personal probability. Nonspecific and uncertain-behavior endpoints retain their reported scope. Reference arithmetic does not establish individual applicability, and European ranks remain withheld where evaluation ancestry is incompatible. The primary partial variance measure is distinct from the adjusted model variance and is not silently substituted."
+  }
+]

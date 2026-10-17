@@ -1,0 +1,8 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {validateSaved} from '../public/workspace.js';
+const snapshot=summary=>({build:'GRCh38',stats:{records:1},warnings:[],results:[],polygenicScores:[{id:'PGS999999',matched:0,total:1,rawSum:null,terms:[{id:'rs1',weight:1,status:'Not observed',contribution:null}],hypotheticalEstimate:{population:'EUR'},referenceComparison:{point:null,lower:null,upper:null},referenceSensitivity:{lower:20,upper:80,scenarioSummary:summary}}]});
+test('saved conditional scenario ranges retain their median and conservative parent bounds',()=>{
+ for(const summary of [{median:50,lower:70,upper:20},{median:50,lower:40,upper:45},{median:50,lower:55,upper:60},{median:50,lower:10,upper:70},{median:50,lower:30,upper:90},{median:50,lower:-1,upper:60},{median:50,lower:40,upper:101},{median:50,lower:'40',upper:60}]){const report=snapshot(summary),before=JSON.stringify(report);assert.throws(()=>validateSaved(JSON.parse(before)));assert.equal(JSON.stringify(report),before);}
+});
+test('valid boundary ranges, partial historical summaries and independent legacy neutral points remain usable',()=>{
+ for(const summary of [{median:20,lower:20,upper:20},{median:80,lower:80,upper:80},{median:50,lower:20,upper:80},{median:50,lower:40,upper:60},{median:50},{median:50,lower:40},{median:50,upper:60},null,undefined]){const report=snapshot(summary),before=JSON.stringify(report);report.polygenicScores[0].referenceSensitivity.point=95;const parsed=JSON.parse(JSON.stringify(report));assert.deepEqual(validateSaved(parsed).report,parsed);delete report.polygenicScores[0].referenceSensitivity.point;assert.equal(JSON.stringify(report),before);}
+});

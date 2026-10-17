@@ -1,0 +1,41 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {estimateAncestry,validateAncestryReference,validateSavedAncestry} from '../public/ancestry.js';
+import {ancestryComparisonHtml} from '../public/ancestry-view.js';
+const bytes=fs.readFileSync('public/data/ancestry-reference.json');
+const panel=validateAncestryReference({...JSON.parse(bytes),referenceSha256:createHash('sha256').update(bytes).digest('hex')});
+const call=(i,status='Called',alleles=[panel.markers[i].mappings.GRCh38.ref,panel.markers[i].alt])=>({id:panel.markers[i].id,status,alleles});
+const fit=results=>estimateAncestry({build:'GRCh38',format:'VCF',results},panel);
+test('exact usable marker mask records only accepted calls, including withheld fits',()=>{
+ const input=[call(0),call(3),call(4,'Quality limited'),call(5,'Called',['N','N']),call(6,'Called',null)];
+ const before=JSON.stringify(input),result=fit(input);
+ assert.equal(result.status,'Unavailable');assert.equal(result.usableMarkers,2);
+ assert.equal(result.usableMarkerMaskHex.slice(0,2),'90');
+ assert.equal(validateSavedAncestry(result),result);
+ assert.equal(JSON.stringify(input),before);
+ assert.equal(fit([...input].reverse()).usableMarkerMaskHex,result.usableMarkerMaskHex);
+ assert.match(fit([]).usableMarkerMaskHex,/^0+$/);
+});
+test('equal coverage with distinct markers is visible only within the same exact reference',()=>{
+ const first=fit([call(0)]),second=fit([call(1)]),snapshot=JSON.stringify([first,second]);
+ assert.equal(first.coverage,second.coverage);
+ assert.match(ancestryComparisonHtml(first,second),/Usable marker sets differ/);
+ assert.doesNotMatch(ancestryComparisonHtml(first,first),/Usable marker sets differ|Marker-set compatibility is unknown/);
+ const historical={...first};delete historical.usableMarkerMaskHex;
+ assert.equal(validateSavedAncestry(historical),historical);
+ assert.match(ancestryComparisonHtml(historical,second),/Marker-set compatibility is unknown/);
+ assert.doesNotMatch(ancestryComparisonHtml(first,{...second,referenceSha256:'a'.repeat(64)}),/Usable marker sets differ/);
+ const conflicting={...fit([]),markerCount:3000,usableMarkerMaskHex:'0'.repeat(750)};
+ assert.equal(validateSavedAncestry(conflicting),conflicting);
+ assert.match(ancestryComparisonHtml(fit([]),conflicting),/Recorded marker inventories conflict/);
+ assert.doesNotMatch(ancestryComparisonHtml(fit([]),conflicting),/Usable marker sets differ/);
+ assert.equal(JSON.stringify([first,second]),snapshot);
+});
+test('saved masks reject incorrect lengths, alphabet, count and padding',()=>{
+ const result=fit([call(0)]);
+ for(const mask of ['',null,42,result.usableMarkerMaskHex.slice(1),'g'+result.usableMarkerMaskHex.slice(1),'0'.repeat(result.usableMarkerMaskHex.length)])assert.throws(()=>validateSavedAncestry({...result,usableMarkerMaskHex:mask}),/Invalid saved ancestry/);
+ const padded={...fit([]),markerCount:3001,usableMarkers:1,coverage:1/3001,usableMarkerMaskHex:'0'.repeat(750)+'1'};
+ assert.throws(()=>validateSavedAncestry(padded),/Invalid saved ancestry/);
+});

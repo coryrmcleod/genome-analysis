@@ -1,0 +1,26 @@
+// Run in WSL against the existing PUBLIC reference. No personal input is accepted.
+import {readFile,writeFile} from 'node:fs/promises';import path from 'node:path';
+import {gunzipSync} from 'node:zlib';import {createHash} from 'node:crypto';import {execFile} from 'node:child_process';import {promisify} from 'node:util';
+import {parseScoringFile} from './import-pgs-library.mjs';
+import {coordinateReferenceCandidates} from './coordinate-reference-candidates.mjs';
+const [publicRoot,id]=process.argv.slice(2);if(!publicRoot||!/^PGS\d{6}$/.test(id||''))throw Error('Supply public 1000G reference directory and reviewed PGS ID');
+const cache=new URL('../work/pgs-source/',import.meta.url),hash=b=>createHash('sha256').update(b).digest('hex');
+const archive=JSON.parse(await readFile(path.join(publicRoot,'archive-provenance.json')));
+if(archive.url!=='https://ftp.ebi.ac.uk/pub/databases/spot/pgs/resources/pgsc_1000G_v1.tar.zst'||archive.sha256!=='a3749573b7f2bdbafbe724a13bf111d7fe0ba4c9daa18db0b8a68bb95094fca9'||archive.referenceBuild!=='GRCh37')throw Error('Not the reviewed public reference archive');
+const metadata=JSON.parse(await readFile(new URL(id+'.json',cache))),bytes=await readFile(new URL(id+'.txt.gz',cache));
+const original=parseScoringFile(gunzipSync(bytes).toString(),{allowEffectOnly:true,allowCoordinateIds:true});
+if(metadata.id!==id||original.metadata.pgs_id!==id)throw Error('Candidate source ID mismatch');
+const url=metadata.ftp_harmonized_scoring_files.GRCh37.positions,u=new URL(url);if(u.protocol!=='https:'||u.hostname!=='ftp.ebi.ac.uk')throw Error('Unexpected harmonized source');
+const response=await fetch(u,{signal:AbortSignal.timeout(90000)});if(!response.ok)throw Error('Harmonized HTTP '+response.status);
+const hmBytes=Buffer.from(await response.arrayBuffer());if(hmBytes.length>20000000)throw Error('Harmonized source exceeds limit');
+const harmonized=parseScoringFile(gunzipSync(hmBytes).toString(),{allowEffectOnly:true,allowCoordinateIds:true});
+if(harmonized.metadata.pgs_id!==id||harmonized.metadata.HmPOS_build!=='GRCh37')throw Error('Wrong harmonization');
+await writeFile(new URL(id+'_GRCh37.txt.gz',cache),hmBytes);
+const positions=harmonized.rows.filter(r=>r.coordinateSource).map(r=>{if(!/^(?:[1-9]|1\d|2[0-2])$/.test(r.hm_chr)||! /^[1-9]\d*$/.test(r.hm_pos))throw Error('Invalid coordinate');return `${r.hm_chr}\t${r.hm_pos}\t${r.hm_pos}\t${r.rsID}`;});
+if(!positions.length)throw Error('No coordinate-only terms');
+const prefix=path.join(publicRoot,'coordinate-candidates-'+id),bed=prefix+'.bed1';await writeFile(bed,positions.join('\n')+'\n');
+await promisify(execFile)('plink2',['--pfile',path.join(publicRoot,'extracted','GRCh37_1000G_ALL'),'vzs','--extract','bed1',bed,'--make-just-pvar','--out',prefix,'--threads','2','--memory','6400'],{maxBuffer:1000000});
+const pvar=await readFile(prefix+'.pvar'),result=coordinateReferenceCandidates(original,harmonized,pvar.toString());
+const audit={version:1,id,retrievedAt:new Date().toISOString(),originalSha256:hash(bytes),harmonizedGRCh37Sha256:hash(hmBytes),referenceSource:{url:archive.url,sha256:archive.sha256,build:'GRCh37',subsetSha256:hash(pvar)},method:'Unique public reference record supplies a candidate ID only; independent Ensembl name, source-coordinate, both-build position and allele checks remain mandatory.',...result};
+await writeFile(new URL(id+'-coordinate-reference-candidates.json',cache),JSON.stringify(audit,null,2)+'\n');
+console.log(JSON.stringify({id,candidates:Object.keys(result.candidates).length,unresolved:result.unresolved,coordinateTerms:positions.length}));

@@ -1,0 +1,3 @@
+[
+ {"id":"PGS000653","family":"Myeloma / plasma-cell malignancy code group","count":22,"allowCoordinateIds":true,"reviewedMyelomaMethod":true,"coverageContext":"European UK Biobank PheCode204.4 research score: includes myeloma, plasmacytoma and related coded malignancies rather than a pathology-confirmed uniform subtype. Evaluation248cases/2490controls showed modest association (per-SD OR1.327, AUROC0.577); the top1%comparison was uncertain, OR2.2[0.855,5.66]. Reported estimates include age, sex, batch and PCs; GA computes only the deposited genetic sum without study standardization. Not a diagnosis, MGUS progression prediction, disease-activity/prognosis measure, screening recommendation or calibrated personal probability; non-European portability is unestablished."}
+]

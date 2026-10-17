@@ -1,0 +1,3 @@
+[
+ {"id":"PGS001823","family":"Coded iron-metabolism disorders","count":654,"coverageContext":"Complete 654-term UK Biobank penalized-regression model for coded disorders of iron metabolism. Covariate-adjusted partial correlations were about 0.131 in the UK group and 0.109 in the Polish group; the Italian and non-European intervals included zero. This is a broad coded endpoint, not a serum iron or ferritin measurement, a diagnosis of iron deficiency or hereditary hemochromatosis, an HFE diplotype test, or a basis for iron supplements or phlebotomy. GA preserves the genetic sum without reproducing clinical covariates or calculating disease probability."}
+]

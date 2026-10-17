@@ -1,0 +1,960 @@
+{
+  "version": "1.0.0",
+  "retrievedAt": "2026-09-08T01:00:14.004Z",
+  "sourceURL": "https://ftp.clinicalgenome.org/ClinGen_gene_curation_list_GRCh38.tsv",
+  "sourceSha256": "a493366d01c1a0550a43dcd20e09da4807186749b71a39d6f97ad81ee6235de8",
+  "build": "GRCh38",
+  "selection": "Exact symbols in the Key genes profiles; no personal copy-number analysis.",
+  "releaseDate": "2026-09-07",
+  "sourceRecordCount": 1528,
+  "records": [
+    {
+      "gene": "ACADVL",
+      "ncbiGeneId": "37",
+      "cytoband": "17p13.1",
+      "location": "chr17:7217125-7225266",
+      "evaluatedAt": "2025-09-26",
+      "haploinsufficiency": {
+        "score": "30",
+        "description": "Gene associated with autosomal recessive phenotype",
+        "pmids": [
+          "27209629"
+        ],
+        "diseaseId": "MONDO:0008723"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/ACADVL"
+    },
+    {
+      "gene": "ACVRL1",
+      "ncbiGeneId": "94",
+      "cytoband": "12q13.13",
+      "location": "chr12:51906944-51923361",
+      "evaluatedAt": "2025-02-11",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "20414677"
+        ],
+        "diseaseId": "MONDO:0010880"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/ACVRL1"
+    },
+    {
+      "gene": "APC",
+      "ncbiGeneId": "324",
+      "cytoband": "5q22.2",
+      "location": "chr5:112707498-112846239",
+      "evaluatedAt": "2021-07-18",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "1651174",
+          "10051640",
+          "23159591"
+        ],
+        "diseaseId": "MONDO:0021057"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/APC"
+    },
+    {
+      "gene": "APOB",
+      "ncbiGeneId": "338",
+      "cytoband": "2p24.1",
+      "location": "chr2:21001429-21044073",
+      "evaluatedAt": "2020-04-09",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "27179706",
+          "1527480",
+          "2843815"
+        ],
+        "diseaseId": "MONDO:0014252"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/APOB"
+    },
+    {
+      "gene": "ATM",
+      "ncbiGeneId": "472",
+      "cytoband": "11q22.3",
+      "location": "chr11:108223067-108369102",
+      "evaluatedAt": "2020-04-08",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "3574400",
+          "27595995",
+          "15928302"
+        ],
+        "diseaseId": "MONDO:0008840"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/ATM"
+    },
+    {
+      "gene": "BMPR2",
+      "ncbiGeneId": "659",
+      "cytoband": "2q33.1-q33.2",
+      "location": "chr2:202376327-202567749",
+      "evaluatedAt": "2020-08-26",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "10903931",
+          "11015450"
+        ],
+        "diseaseId": "MONDO:0024533"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/BMPR2"
+    },
+    {
+      "gene": "BRCA1",
+      "ncbiGeneId": "672",
+      "cytoband": "17q21.31",
+      "location": "chr17:43044295-43170327",
+      "evaluatedAt": "2021-09-23",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "32375709",
+          "21989022",
+          "11802209",
+          "24312913"
+        ],
+        "diseaseId": "MONDO:0700268"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/BRCA1"
+    },
+    {
+      "gene": "BRCA2",
+      "ncbiGeneId": "675",
+      "cytoband": "13q13.1",
+      "location": "chr13:32315508-32400268",
+      "evaluatedAt": "2021-07-14",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "16199546",
+          "17063271",
+          "25632310",
+          "12097290",
+          "11897832",
+          "12569143"
+        ],
+        "diseaseId": "MONDO:0700269"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/BRCA2"
+    },
+    {
+      "gene": "CACNA1S",
+      "ncbiGeneId": "779",
+      "cytoband": "1q32.1",
+      "location": "chr1:201039512-201112426",
+      "evaluatedAt": "2026-06-18",
+      "haploinsufficiency": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": "MONDO:0011163"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/CACNA1S"
+    },
+    {
+      "gene": "CAPN3",
+      "ncbiGeneId": "825",
+      "cytoband": "15q15.1",
+      "location": "chr15:42359501-42412317",
+      "evaluatedAt": "2026-04-24",
+      "haploinsufficiency": {
+        "score": "30",
+        "description": "Gene associated with autosomal recessive phenotype",
+        "pmids": [
+          "9150160",
+          "7720071"
+        ],
+        "diseaseId": "MONDO:0015152"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/CAPN3"
+    },
+    {
+      "gene": "CDH1",
+      "ncbiGeneId": "999",
+      "cytoband": "16q22.1",
+      "location": "chr16:68737292-68835537",
+      "evaluatedAt": "2020-04-10",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "26182300",
+          "24037103",
+          "19168852"
+        ],
+        "diseaseId": "MONDO:0007648"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/CDH1"
+    },
+    {
+      "gene": "CEP290",
+      "ncbiGeneId": "80184",
+      "cytoband": "12q21.32",
+      "location": "chr12:88049016-88142088",
+      "evaluatedAt": "2012-08-22",
+      "haploinsufficiency": {
+        "score": "30",
+        "description": "Gene associated with autosomal recessive phenotype",
+        "pmids": [],
+        "diseaseId": "MONDO:0015369"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/CEP290"
+    },
+    {
+      "gene": "CFTR",
+      "ncbiGeneId": "1080",
+      "cytoband": "7q31.2",
+      "location": "chr7:117480025-117668665",
+      "evaluatedAt": "2016-08-22",
+      "haploinsufficiency": {
+        "score": "30",
+        "description": "Gene associated with autosomal recessive phenotype",
+        "pmids": [],
+        "diseaseId": "MONDO:0009061"
+      },
+      "triplosensitivity": {
+        "score": "Not yet evaluated",
+        "description": "Not yet evaluated",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/CFTR"
+    },
+    {
+      "gene": "DICER1",
+      "ncbiGeneId": "23405",
+      "cytoband": "14q32.13",
+      "location": "chr14:95086228-95158010",
+      "evaluatedAt": "2022-02-09",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "26925222",
+          "19556464",
+          "21266384",
+          "25118636",
+          "28624956",
+          "22180160"
+        ],
+        "diseaseId": "MONDO:0100216"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/DICER1"
+    },
+    {
+      "gene": "DPYD",
+      "ncbiGeneId": "1806",
+      "cytoband": "1p21.3",
+      "location": "chr1:97077743-97921059",
+      "evaluatedAt": "2018-01-23",
+      "haploinsufficiency": {
+        "score": "30",
+        "description": "Gene associated with autosomal recessive phenotype",
+        "pmids": [],
+        "diseaseId": "MONDO:0010130"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/DPYD"
+    },
+    {
+      "gene": "ENG",
+      "ncbiGeneId": "2022",
+      "cytoband": "9q34.11",
+      "location": "chr9:127815016-127854658",
+      "evaluatedAt": "2024-01-11",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "9245986",
+          "9366572",
+          "10545596",
+          "10749981",
+          "15879500",
+          "23399955",
+          "35487791"
+        ],
+        "diseaseId": "MONDO:0008535"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/ENG"
+    },
+    {
+      "gene": "FBN1",
+      "ncbiGeneId": "2200",
+      "cytoband": "15q21.1",
+      "location": "chr15:48408313-48645709",
+      "evaluatedAt": "2019-12-04",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "17701892",
+          "30286810",
+          "21063442"
+        ],
+        "diseaseId": "MONDO:0007947"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/FBN1"
+    },
+    {
+      "gene": "GCK",
+      "ncbiGeneId": "2645",
+      "cytoband": "7p13",
+      "location": "chr7:44143213-44189439",
+      "evaluatedAt": "2025-10-22",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "1570017",
+          "23085272",
+          "27269892",
+          "33852230",
+          "19790256"
+        ],
+        "diseaseId": "MONDO:0015967"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/GCK"
+    },
+    {
+      "gene": "GJB2",
+      "ncbiGeneId": "2706",
+      "cytoband": "13q12.11",
+      "location": "chr13:20187470-20192938",
+      "evaluatedAt": "2026-03-27",
+      "haploinsufficiency": {
+        "score": "30",
+        "description": "Gene associated with autosomal recessive phenotype",
+        "pmids": [
+          "16380907",
+          "10633133",
+          "26188157"
+        ],
+        "diseaseId": "MONDO:0019497"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/GJB2"
+    },
+    {
+      "gene": "HFE",
+      "ncbiGeneId": "3077",
+      "cytoband": "6p22.2",
+      "location": "chr6:26087429-26098343",
+      "evaluatedAt": "2024-04-08",
+      "haploinsufficiency": {
+        "score": "30",
+        "description": "Gene associated with autosomal recessive phenotype",
+        "pmids": [
+          "22093335",
+          "20117027",
+          "17951290",
+          "24920245",
+          "18809761"
+        ],
+        "diseaseId": "MONDO:0021001"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/HFE"
+    },
+    {
+      "gene": "HNF1A",
+      "ncbiGeneId": "6927",
+      "cytoband": "12q24.31",
+      "location": "chr12:120978543-121002512",
+      "evaluatedAt": "2023-12-13",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "12574234",
+          "11668618",
+          "8945470",
+          "9097962",
+          "9166684"
+        ],
+        "diseaseId": "MONDO:0010894"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/HNF1A"
+    },
+    {
+      "gene": "HNF4A",
+      "ncbiGeneId": "3172",
+      "cytoband": "20q13.12",
+      "location": "chr20:44355699-44434596",
+      "evaluatedAt": "2025-07-23",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "21105491",
+          "23348805",
+          "34789499",
+          "31968686",
+          "20164212",
+          "29927023"
+        ],
+        "diseaseId": "MONDO:0015967"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/HNF4A"
+    },
+    {
+      "gene": "ITGB3",
+      "ncbiGeneId": "3690",
+      "cytoband": "17q21.32",
+      "location": "chr17:47253827-47313743",
+      "evaluatedAt": "2012-08-27",
+      "haploinsufficiency": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/ITGB3"
+    },
+    {
+      "gene": "KCNQ1",
+      "ncbiGeneId": "3784",
+      "cytoband": "11p15.5-p15.4",
+      "location": "chr11:2445008-2849105",
+      "evaluatedAt": "2020-10-13",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "26669661",
+          "29532034",
+          "23098067"
+        ],
+        "diseaseId": "MONDO:0002442"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/KCNQ1"
+    },
+    {
+      "gene": "LDLR",
+      "ncbiGeneId": "3949",
+      "cytoband": "19p13.2",
+      "location": "chr19:11089463-11133820",
+      "evaluatedAt": "2021-10-27",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "33740630",
+          "15321837"
+        ],
+        "diseaseId": "MONDO:0007750"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/LDLR"
+    },
+    {
+      "gene": "MLH1",
+      "ncbiGeneId": "4292",
+      "cytoband": "3p22.2",
+      "location": "chr3:36993466-37050846",
+      "evaluatedAt": "2021-10-13",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "14635101",
+          "15942939",
+          "16955466",
+          "33335961",
+          "30289396",
+          "33468175"
+        ],
+        "diseaseId": "MONDO:0005835"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/MLH1"
+    },
+    {
+      "gene": "MSH2",
+      "ncbiGeneId": "4436",
+      "cytoband": "2p21-p16.3",
+      "location": "chr2:47403067-47709830",
+      "evaluatedAt": "2021-10-13",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "10850409",
+          "12203789",
+          "9843200",
+          "34203177",
+          "30710526"
+        ],
+        "diseaseId": "MONDO:0005835"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/MSH2"
+    },
+    {
+      "gene": "MSH6",
+      "ncbiGeneId": "2956",
+      "cytoband": "2p16.3",
+      "location": "chr2:47783145-47810101",
+      "evaluatedAt": "2021-10-13",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "9354786",
+          "11709755",
+          "14974087",
+          "20028993",
+          "20487569",
+          "25318681"
+        ],
+        "diseaseId": "MONDO:0005835"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/MSH6"
+    },
+    {
+      "gene": "MYBPC3",
+      "ncbiGeneId": "4607",
+      "cytoband": "11p11.2",
+      "location": "chr11:47331406-47352702",
+      "evaluatedAt": "2023-01-10",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "22820391",
+          "23816408",
+          "32973354",
+          "19574547",
+          "7493025"
+        ],
+        "diseaseId": "MONDO:0005045"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/MYBPC3"
+    },
+    {
+      "gene": "MYH7",
+      "ncbiGeneId": "4625",
+      "cytoband": "14q11.2",
+      "location": "chr14:23412740-23435660",
+      "evaluatedAt": "2015-11-15",
+      "haploinsufficiency": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/MYH7"
+    },
+    {
+      "gene": "PAH",
+      "ncbiGeneId": "5053",
+      "cytoband": "12q23.2",
+      "location": "chr12:102836889-102958441",
+      "evaluatedAt": "2014-08-28",
+      "haploinsufficiency": {
+        "score": "30",
+        "description": "Gene associated with autosomal recessive phenotype",
+        "pmids": [],
+        "diseaseId": "MONDO:0009861"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/PAH"
+    },
+    {
+      "gene": "PALB2",
+      "ncbiGeneId": "79728",
+      "cytoband": "16p12.2",
+      "location": "chr16:23603165-23641310",
+      "evaluatedAt": "2025-02-24",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "17200668",
+          "25099575",
+          "31841383"
+        ],
+        "diseaseId": "MONDO:0700272"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/PALB2"
+    },
+    {
+      "gene": "PCSK9",
+      "ncbiGeneId": "255738",
+      "cytoband": "1p32.3",
+      "location": "chr1:55039548-55064852",
+      "evaluatedAt": "2015-12-17",
+      "haploinsufficiency": {
+        "score": "40",
+        "description": "Dosage sensitivity unlikely",
+        "pmids": [
+          "19191301",
+          "15654334"
+        ],
+        "diseaseId": "MONDO:0011369"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/PCSK9"
+    },
+    {
+      "gene": "PMS2",
+      "ncbiGeneId": "5395",
+      "cytoband": "7p22.1",
+      "location": "chr7:5970925-6009106",
+      "evaluatedAt": "2026-04-22",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "18602922",
+          "16619239"
+        ],
+        "diseaseId": "MONDO:0005835"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/PMS2"
+    },
+    {
+      "gene": "PTEN",
+      "ncbiGeneId": "5728",
+      "cytoband": "10q23.31",
+      "location": "chr10:87863625-87971930",
+      "evaluatedAt": "2020-06-24",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "21194675",
+          "32003824"
+        ],
+        "diseaseId": "MONDO:0017623"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/PTEN"
+    },
+    {
+      "gene": "RUNX1",
+      "ncbiGeneId": "861",
+      "cytoband": "21q22.12",
+      "location": "chr21:34787801-35049302",
+      "evaluatedAt": "2023-06-14",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "31723833",
+          "18478040",
+          "19357396",
+          "33616470"
+        ],
+        "diseaseId": "MONDO:0100083"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/RUNX1"
+    },
+    {
+      "gene": "RYR1",
+      "ncbiGeneId": "6261",
+      "cytoband": "19q13.2",
+      "location": "chr19:38433691-38587564",
+      "evaluatedAt": "2026-05-28",
+      "haploinsufficiency": {
+        "score": "30",
+        "description": "Gene associated with autosomal recessive phenotype",
+        "pmids": [
+          "18253926"
+        ],
+        "diseaseId": "MONDO:0100150"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/RYR1"
+    },
+    {
+      "gene": "TP53",
+      "ncbiGeneId": "7157",
+      "cytoband": "17p13.1",
+      "location": "chr17:7668421-7687490",
+      "evaluatedAt": "2021-11-10",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "26014290",
+          "21056402",
+          "28369373",
+          "26681312",
+          "12584563"
+        ],
+        "diseaseId": "MONDO:0018875"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/TP53"
+    },
+    {
+      "gene": "USH2A",
+      "ncbiGeneId": "7399",
+      "cytoband": "1q41",
+      "location": "chr1:215622891-216423448",
+      "evaluatedAt": "2016-08-22",
+      "haploinsufficiency": {
+        "score": "30",
+        "description": "Gene associated with autosomal recessive phenotype",
+        "pmids": [],
+        "diseaseId": "MONDO:0010169"
+      },
+      "triplosensitivity": {
+        "score": "Not yet evaluated",
+        "description": "Not yet evaluated",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/USH2A"
+    },
+    {
+      "gene": "VHL",
+      "ncbiGeneId": "7428",
+      "cytoband": "3p25.3",
+      "location": "chr3:10141778-10153667",
+      "evaluatedAt": "2022-05-11",
+      "haploinsufficiency": {
+        "score": "3",
+        "description": "Sufficient evidence for dosage pathogenicity",
+        "pmids": [
+          "20151405",
+          "33362845"
+        ],
+        "diseaseId": "MONDO:0008667"
+      },
+      "triplosensitivity": {
+        "score": "0",
+        "description": "No evidence available",
+        "pmids": [],
+        "diseaseId": null
+      },
+      "url": "https://search.clinicalgenome.org/kb/gene-dosage/VHL"
+    }
+  ]
+}

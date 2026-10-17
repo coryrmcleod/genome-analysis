@@ -1,0 +1,3 @@
+[
+ {"id":"PGS000327","family":"Autism spectrum disorder","count":35087,"allowCoordinateIds":true,"reviewedAdditiveMethod":true,"coverageContext":"PGC/iPSYCH autism research model. The paper establishes additive weighting, but Catalog weight scale remains NR; weights are unchanged. Reported performance used internal cross-validation, not independent validation of this deposited full-sample model. This cannot diagnose autism, measure support needs or abilities, or predict an individual's development. No study-specific normalization or clinical risk calibration is applied."}
+]

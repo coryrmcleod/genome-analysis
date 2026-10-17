@@ -1,0 +1,33 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {loadAncestryReference} from '../public/ancestry-reference-loader.js';
+import {validateSavedAncestry,estimateAncestry} from '../public/ancestry.js';
+import {ancestryComparisonHtml} from '../public/ancestry-view.js';
+const bytes=fs.readFileSync(new URL('../public/data/ancestry-reference.json',import.meta.url));
+test('ancestry loader fingerprints exact response bytes without trusting a supplied fingerprint',async()=>{
+ const panel=await loadAncestryReference(new Response(bytes));
+ assert.equal(panel.referenceSha256,createHash('sha256').update(bytes).digest('hex'));
+ const result=estimateAncestry({build:'GRCh38',format:'VCF',results:[]},panel);
+ assert.equal(result.referenceSha256,panel.referenceSha256);
+ assert.equal(validateSavedAncestry(result),result);
+ const altered=Buffer.from(JSON.stringify({...JSON.parse(bytes),referenceSha256:'a'.repeat(64)}));
+ const current=await loadAncestryReference(new Response(altered));
+ assert.equal(current.referenceSha256,createHash('sha256').update(altered).digest('hex'));
+ assert.notEqual(current.referenceSha256,'a'.repeat(64));
+ await assert.rejects(loadAncestryReference(new Response('',{status:503})),/unavailable/);
+ await assert.rejects(loadAncestryReference(new Response('{}')),/Unsupported ancestry/);
+});
+test('saved ancestry comparison distinguishes exact reference changes and historical unknown identity',()=>{
+ const before={status:'Unavailable',reason:'No usable markers',groups:[],populationAffinities:[],usableMarkers:0,markerCount:3000,coverage:0,warnings:[],referenceVersion:'1.0.1',referenceSha256:'a'.repeat(64)};
+ assert.equal(validateSavedAncestry(before),before);
+ const after={...before,referenceSha256:'b'.repeat(64)},snapshot=JSON.stringify([before,after]);
+ assert.match(ancestryComparisonHtml(before,after),/Recorded reference files differ/);
+ assert.doesNotMatch(ancestryComparisonHtml(before,before),/Recorded reference files differ|Reference compatibility is unknown/);
+ const historical={...before};delete historical.referenceSha256;
+ assert.equal(validateSavedAncestry(historical),historical);
+ assert.match(ancestryComparisonHtml(historical,after),/Reference compatibility is unknown/);
+ assert.equal(JSON.stringify([before,after]),snapshot);
+ for(const value of ['',null,42,'a'.repeat(63),'A'.repeat(64)])assert.throws(()=>validateSavedAncestry({...before,referenceSha256:value}),/Invalid saved ancestry/);
+});
